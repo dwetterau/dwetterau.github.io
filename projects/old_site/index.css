@@ -1,0 +1,39 @@
+.character {
+    /*font-family: 'monospace';*/
+    font-family:monospace,monospace;
+    /*font-size:1em;*/
+    font-size: 12px;
+    font-weight:bold;
+}
+
+.textRow {
+    height: 13px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+#infobox {
+    z-index: 1;
+    position: absolute;
+    margin: 25px;
+    padding: 10px;
+    color: #FFF;
+    background-color: #222;
+    font-size:13px;
+    text-align: center;
+}
+
+#name {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#infobox a:link {
+    color: #CCC;
+}
+#infobox a:visited {
+    color : #CCC;
+}
+
+

@@ -1,0 +1,94 @@
+body {
+  margin: 0px;
+  background-color: #333;
+}
+
+div.flex_container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.normal_text {
+  font-family: sans-serif, Optima, Segoe, "Segoe UI", Candara, Calibri, Arial;
+  -webkit-text-stroke: .4px #505050;
+  text-shadow: black .05em .05em .04em;
+}
+
+div#page_title {
+  width: auto;
+  text-align: center;
+}
+
+div#name_div {
+  text-align: center;
+  color: #888;
+  font-size: 150;
+}
+
+div#nav_div {
+  text-align: center;
+  font-size: 30;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #F90;
+}
+
+a:visited {
+  color: #F90;
+}
+
+a:hover {
+  color: "#777";
+}
+
+a:active {
+  color: "#777";
+}
+
+div#about {
+  width: auto;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+div#about_title {
+  color: #F90;
+  font-size: 30;
+}
+
+img#about_pic {
+  width: auto;
+  height: auto;
+  max-width: 175px;
+  max-height: 250px;
+}
+
+div#about_pic_div {
+  display: inline;
+  vertical-align: top;
+}
+
+div#about_body {
+  display: inline;
+  color: #888;
+  font-size: 25;
+}
+
+div#return {
+  margin-top: 2em;
+  text-align: center;
+  font-size: smaller;
+}

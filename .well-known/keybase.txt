@@ -1,0 +1,66 @@
+==================================================================
+https://keybase.io/dwetterau
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://dwett.com
+  * I am dwetterau (https://keybase.io/dwetterau) on keybase.
+  * I have a public key with fingerprint A077 5907 82EC C102 DE34  E862 0A8F CC44 4D17 61DA
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "a077590782ecc102de34e8620a8fcc444d1761da",
+            "host": "keybase.io",
+            "key_id": "0a8fcc444d1761da",
+            "uid": "7fab9615781e2f41ef6a0c60aa5b2e00",
+            "username": "dwetterau"
+        },
+        "service": {
+            "hostname": "dwett.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1409198598,
+    "expire_in": 157680000,
+    "prev": "5483c38f4c5116c1a997f47c19cf9cb9361722971be1c8af047b41281c8abb21",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.3.1
+Comment: https://keybase.io/crypto
+
+yMHfAnicbZFdSBRRGIZ3tawW2wLLikJyIEoynTM7vxvqhXYRlJaJGxQsZ86cmZ3U
+mXVmdtU2MULYzH4gyYWC8MLFn1yKLiJBy6SLxbaLIrLfi+oiklQSujFwm5GCLjo3
+h/Oe532/7+N7ujHX5XF7rmVqjm6D79zPphYjrhMro3kxQtSlDsIfI5rw6iWrmoKN
+sKFqFuEnIMlxjEByPIURAiQlYR+NeZYiIS8jRNO0BDgWSJAoJUK66TjsGBGauEzV
+bc1+BFXJVv/DR1Y/OBmKAgsYjgeYkmmAZRaSiCUhZEQKk6QDmtjQYAu2aakNWxY2
+YIToLCVsOaoi7DTt1P4XKUN6i+0MG7qlI73ZlkOWFfY7Lqsj7GBtWAz+CQiKqibZ
+U9uGKDZMVdcIP7BJZKlOIqBJAQg8I/ClBG4PqwYOqg7BcCxP2scpg6N2JEPzPuTj
+ZRoxALAIQEHgZJpDQECygETBxwKOogQOiBggHsokzYk0oHjnIYoUIJyRWjWd8NN2
+m1CxI01V0aAVMTDROT11eo3L7XHlrc1x9ubybNj8d5ve8XUr5JHXV7oWv/e3es25
+99ure/xLHzOPGifO1Ss9sfzYQNHE1sDc8cKSQG2u70s6LeXU/jSP/RiuH4meuXwy
+fodoqhAn7u/eMVa2t/hAQ0l0Dzhft9jKDHGJ/PjthRrvw0MfKl8N9nKXZt2R1Kkt
+WVSRYdffelA9PLY/PlU5c2Mo5SnI9oZ2Tab7XRezb7KNj58kDievz4T64pPlBc0V
+zfp8fiDs5d8uRwaXMzPJOCMUztckzO4XSirn5nBxw6dEVUqu6qktevlN2Vc3biAT
+RNM7P3dNPo90jicl5epdb3fftDYQjybvlbf/WggYZ3MV5uvChe7ipRE4e3DTb1xw
+ED8=
+=YKSh
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dwetterau
+
+==================================================================
+

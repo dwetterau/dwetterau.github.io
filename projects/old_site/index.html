@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>David Wetterau</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+changeBack = function(imageName) {
+    var element = document.getElementById('main_text');
+    element.style.backgroundImage = "url(\"" + imageName + "\")";
+};
+</script>
+<script src="/javascripts/dwett.js"></script>
+<script src="image2text.js" defer></script>
+</head>
+<body style="margin: 0px; overflow:hidden;">
+<div id ="infobox">
+<div id="name">David Wetterau</div>
+<div id="info">Junior Turing Scholar<br />david.wetterau@utexas.edu<br /></div>
+<div id="pictureOptions">
+Picture: <a href="javascript:changePicture('images/origback.jpg');">Bliss</a>
+- <a href="javascript:changePicture('images/towel.jpg');">Funny Cat</a>
+- <a href="javascript:changePicture('images/me.jpg');">Me</a>
+</div>
+<div id=asciiOptions>
+Display type:<a href="javascript:changeType(0);">Black Text</a> - <a href="javascript:changeType(1);">Color Text</a><br><a href="javascript:changeType(2);">Color Text & Background</a> - <a href="javascript:showImage();">Original</a>
+</div>
+<div><a href="/projects/JSPhysics/legacy">JS 2D Physics</a> | <a href="https://github.com/dwetterau">Github</a></div>
+</div>
+<canvas style="display:inline; width:100%; height:100%; position: absolute;" id="myCanvas" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<div id="picture" style="display:none;"></div>
+
+</body>
+</html>
