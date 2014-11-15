@@ -12,7 +12,7 @@ var allowCrossDomain = function(req, res, next) {
 app.use(allowCrossDomain);
 app.use('/', express.static(__dirname + '/'));
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8080;
 app.listen(port, function() {
   console.log("Server listening on", port);
 });
