@@ -24,6 +24,7 @@ div.flex_container {
   font-family: sans-serif, Optima, Segoe, "Segoe UI", Candara, Calibri, Arial;
   -webkit-text-stroke: .4px #505050;
   text-shadow: black .05em .05em .04em;
+  font-size: 18px;
 }
 
 div#page_title {
@@ -34,12 +35,12 @@ div#page_title {
 div#name_div {
   text-align: center;
   color: #888;
-  font-size: 150pt;
+  font-size: 100pt;
 }
 
 div#nav_div {
   text-align: center;
-  font-size: 30pt;
+  font-size: 25pt;
 }
 
 a {
@@ -76,19 +77,18 @@ div#about_title {
 img#about_pic {
   width: auto;
   height: auto;
-  max-width: 175px;
-  max-height: 250px;
+  max-height: 170px;
 }
 
 div#about_pic_div {
-  display: inline;
-  vertical-align: top;
+  display: table-cell;
+  position: relative;
 }
 
 div#about_body {
   display: inline;
   color: #888;
-  font-size: 25pt;
+  font-size: 18pt;
 }
 
 div#return {
