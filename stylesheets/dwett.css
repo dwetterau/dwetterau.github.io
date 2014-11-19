@@ -122,3 +122,20 @@ div#project_header {
     padding: .5em 0 .5em 0;
     margin-left: 10%;
 }
+
+div.tile-header {
+    margin-bottom: .5em;
+    font-size: larger;
+}
+
+.tile-body img {
+    max-width: 200px;
+    margin: 0 .5em .5em 0;
+    float: left;
+}
+
+.tile-body {
+    display: inline-block;
+    color: #222;
+    text-align: justify;
+}

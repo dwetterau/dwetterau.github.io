@@ -13,10 +13,37 @@
         For now here's a <a href="https://www.github.com/dwetterau">link to my GitHub</a>.
     </div>
     <div class="tile">
-        <a href="/projects/JSPhysics/demos"> 3D JS physics engine</a>
+        <div class="tile-header">
+            <a href="/projects/JSPhysics/demos"> 3D JS physics engine</a>
+        </div>
+        <div class="tile-body">
+            <img src="/images/3d-demo.png">
+                I have always enjoyed physics and the math behind it so when I learned to program, some of the first
+                things I made were physics simulations. This is probably the fourth or fifth one
+                I made but it was the first to include many complex collisions in 3 dimensions.
+            <br /><br />
+                My parents gave me a fantastic book on how to implement a commercial physics engine one Christmas and
+                after reading through it, I decided to implement a physics engine like the one the author described in
+                Javascript leveraging WebGL libraries for rendering. While implementing this engine, I actually found
+                some errata in the book and <a href="https://github.com/idmillington/cyclone-physics/pull/26">corrected
+                them</a> in the author's open source C++ implementation. Some small demos of the engine working can be
+                seen at the link above and all of the code is available on
+                <a href="https://github.com/dwetterau/JSPhysics">GitHub</a>.
+        </div>
     </div>
     <div class="tile">
-        <a href="/projects/JSPhysics/legacy"> 2D JS physics engine</a>
+        <div class="tile-header">
+            <a href="/projects/JSPhysics/legacy"> 2D JS physics engine</a>
+        </div>
+        <div class="tile-body">
+            <img src="/images/2d-demo.png">
+                I implemented a 2-dimensional bouncing ball simulation to experiment with Javascript's access to device
+                accelerometer data and the math behind momentum based glancing collisions. It was a lot of fun to derive
+                the math behind elastic collisions that aren't head on. One interesting result of this was a almost
+                labyrinth-style simulation on mobile devices (and some MacBook Pros). You can see the working simulation
+                at the link above and the source code is hosted on
+                <a href="https://github.com/dwetterau/JSPhysics/tree/master/legacy">GitHub</a>.
+        </div>
     </div>
     <div class="tile">
         <a href="/" class="transition">Back</a>
