@@ -124,6 +124,7 @@ div#project_header {
 }
 
 div.tile-header {
+    color: #F90;
     margin-bottom: .5em;
     font-size: larger;
 }
