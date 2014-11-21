@@ -51,6 +51,33 @@
     </div>
     <div class="tile">
         <div class="tile-header">
+            Dwopbox |
+            <a href="https://github.com/dwetterau/Dwopbox">GitHub</a>
+        </div>
+        <div class="tile-body">
+            <img src="/images/dwopbox.png">
+                My college roommates and I built what we eventually called "Dwopbox" during HackTX 2013. We were
+                surprisingly successful during the hackathon and actually
+                <a href="http://techzette.com/2013-hacktx-winners-and-finalists/">won the "Hacker Lounge" prize </a>
+                for this project. Dwopbox is a peer-to-peer file sharing system written entirely in Javascript that
+                uses WebRTC channels to transmit files.
+            <br /><br />
+                We built Dwopbox in the midst of many of Edward Snowden's NSA revelations which inspired us to think of
+                a new way to share files across the Internet without the contents of the files themselves getting into
+                the hands of a government. Dwopbox consisted of two parts, a simple Postgres database that stored file
+                metadata, and a distributed protocol we created (essentially a simplified version of BitTorrent). The
+                protocol allows users who joined a "room" to receive information about the files that the original user
+                was sending. Using Chrome's local storage support, we first loaded the chosen files into the
+                broadcaster's web browser, then started sending pieces of the file to other web browsers through WebRTC
+                data channels. Once a viewer has all parts of the file, some client-side Javascript reconstructs the
+                file by pulling it out of local storage and immediately "downloading" it to the device.
+            <br /><br />
+                The friends I worked on this project with were Calvin MacKenzie, Josh Slocum, Dan Rutledge, and
+                Adam Faulkner.
+        </div>
+    </div>
+    <div class="tile">
+        <div class="tile-header">
             <a href="/projects/JSPhysics/legacy"> 2D JS physics engine</a> |
             <a href="https://github.com/dwetterau/JSPhysics/tree/master/legacy">GitHub</a>
         </div>
