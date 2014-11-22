@@ -28,6 +28,40 @@
     </div>
     <div class="tile">
         <div class="tile-header">
+            <a href="/projects/countdera">Countdera</a> | <a href="https://github.com/dwetterau/countdera">GitHub</a>
+        </div>
+        <div class="tile-body">
+            <a href="/projects/countdera"><img src="/images/countdera.png"></a>
+                At HackTX 2014, my college friends and I decided to make a web application that could potentially
+                replace display advertising on the internet. The inspiration for this project was a project called
+                <a href="https://news.ycombinator.com/item?id=6713537">Tidbit</a>, which mined bitcoins in a browser
+                when someone visited a website. We like to think of this approach as a way to pay for the websites you
+                use everyday with your CPU cycles (after opting in) instead of your personal information (which is what
+                targetted advertising today relies on).
+            <br />
+            <br />
+                Countdera specifically was a Javascript Framework that allowed people to upload map and reduce functions
+                (written in Javascript), provide links to input files, and run MapReduce style jobs on their input data.
+                We demonstrated this functionality at the hackathon with a simple word counting program running on the
+                text of the US constitution and you can see how this works in
+                <a href="https://www.dropbox.com/s/qn03a659bh1k49h/20141019_102403.mp4?dl=0">this video</a>. We used
+                Firebase as a way to keep track of all the worker nodes (visitors to websites with an embedded iframe
+                instead  of a display ad) and as a way for worker nodes to communicate to each other. We also didn't
+                exactly implement MapReduce, the day before the hackathon, I designed a protocol for us to implement
+                which is described in great detail at the link above. This worked reasonably well but there are a few
+                optimizations and improvements that we would need to make to deploy something like this that we outline
+                on the GitHub readme. The reception of Countdera at the hackathon was quite positive and we even had the
+                opportunity to present it in the finals to all of the contestants.
+            <br />
+            <br />
+                I personally believe that the world is moving in a direction that will value personal privacy more than
+                in the past and I think that eliminating targeted advertising is a good start. I even wrote a
+                <a href="/assets/OnlineTracking.pdf">very long paper</a> about targeted advertising once for a class in
+                college. I built Countdera with John Agnew, Dan Rutledge, Jim Given, and Josh Slocum.
+        </div>
+    </div>
+    <div class="tile">
+        <div class="tile-header">
             <a href="http://challengepost.com/software/touch">Touch</a> |
             <a href="https://github.com/obi1kenobi/ychacks2014">GitHub</a>
         </div>
