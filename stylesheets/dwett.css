@@ -139,3 +139,7 @@ div.tile-header {
     display: inline-block;
     color: #222;
 }
+
+.full-width {
+    display: block;
+}
