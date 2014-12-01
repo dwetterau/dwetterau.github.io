@@ -11,11 +11,6 @@ var cwidth = 0;
 var cheight = 0;
 
 init = function() {
-    var c = document.getElementById("myCanvas");
-    var ctx = c.getContext("2d");
-
-    canvasEl = c;
-    context = ctx;
 
     var params = getParams();
     asciiType = params['type'];
@@ -23,32 +18,24 @@ init = function() {
     if (asciiType == undefined) {
         asciiType = 1;
     }
-    cwidth = Math.max(document.body.clientWidth == undefined ? 0 : document.body.clientWidth
-                 , document.width == undefined ? 0 : document.width);
+    var width = $(window).width();
+    var height = $(window).height();
 
-    cheight = getDocHeight();
-
-    canvasEl.width = cwidth;
-    canvasEl.height = cheight;
-
+    var canvas = document.createElement("canvas");
+    canvas.width = width;
+    canvas.height = height; //same as the image
+    var ctx = canvas.getContext("2d");
+    $(canvas).css("position", "absolute");
+    document.getElementById("container").appendChild(canvas);
 
     var imageObj = new Image();
 
     imageObj.onload = function() {
-        ctx.drawImage(imageObj, 0, 0, canvasEl.width, canvasEl.height);
-        convertImage(canvasEl, context);
+        ctx.drawImage(imageObj, 0, 0, width, height);
+        convertImage(canvas, ctx);
     };
     imageObj.src = picture;
-}
-
-function getDocHeight() {
-    var D = document;
-    return Math.max(
-        Math.max(D.body.scrollHeight, D.documentElement.scrollHeight),
-        Math.max(D.body.offsetHeight, D.documentElement.offsetHeight),
-        Math.max(D.body.clientHeight, D.documentElement.clientHeight)
-    );
-}
+};
 
 getParams = function() {
     var params = {};
@@ -62,74 +49,65 @@ getParams = function() {
        params[decode(match[1])] = decode(match[2]);
 
     return params;
-}
+};
+
 var onOriginal = false;
 showImage = function() {
     onOriginal = true;
-    canvasEl.style.display = 'block';
-    document.getElementById("picture").style.display = 'none';
+    $("#container").show();
+    $("canvas").show();
+    $("#picture").hide();
     var imageObj = new Image();
 
+    var canvasEl = $("canvas")[0];
+    var context = canvasEl.getContext("2d");
     imageObj.onload = function() {
         context.drawImage(imageObj, 0, 0, canvasEl.width, canvasEl.height);
     };
     imageObj.src = picture;
-
-}
+};
 
 changeType = function(type) {
     onOriginal = false;
     asciiType = type;
+
+    var canvasEl = $("canvas")[0];
+    var context = canvasEl.getContext("2d");
     convertImage(canvasEl, context);
-}
+};
 
 changePicture = function(image) {
-    var bool = false;
-    if (picture != image) {
-        bool = true;
-    }
+    var bool = picture != image;
     picture = image;
     if (bool) {
         var imageObj = new Image();
 
         imageObj.onload = function() {
+            var canvasEl = $("canvas")[0];
+            var context = canvasEl.getContext("2d");
             context.drawImage(imageObj, 0, 0, canvasEl.width, canvasEl.height);
             if (!onOriginal) 
                 convertImage(canvasEl, context);
         };
         imageObj.src = picture;
     }
-}
-
-function textWidthAndHeight() {
-  var div = document.getElementById('fonttest');
-  if (!div) {
-    div = document.createElement('div');
-    div.style.position = 'absolute';
-    div.style.top = '-1000px';
-    div.setAttribute('id', 'fonttest');
-    div.innerText = 'X';
-    document.body.appendChild(div);
-  }
-  return {
-    width: div.clientWidth,
-    height: div.clientHeight
-  };
-}
+};
 
 function convertImage(can, ctx) {
+    var cwidth = can.width;
+    var cheight = can.height;
     var type = asciiType;
-    var imgd = ctx.getImageData(0,0,cwidth, cheight);
+    var imgd = ctx.getImageData(0,0, cwidth, cheight);
     var pix = imgd.data;
     
     var div = document.getElementById('picture');
     div.textContent = '';
     div.style.display = 'block';
-    
+
     //console.log(textWidthAndHeight());
 
     var charWidth = 7;
-    var charHeight = 13;
+    var charHeight = 7; //13 / 2;
     
     var rows = Math.floor((cheight) / charHeight);
     var cols = Math.floor((cwidth - 60) / charWidth);
@@ -141,7 +119,6 @@ function convertImage(can, ctx) {
         row.className = 'textRow';
         for (var c = 0; c < cols; c++) {
             var num = 0;
-            var total = 0;
             var totalRed = 0;
             var totalGreen = 0;
             var totalBlue = 0;
@@ -179,7 +156,7 @@ getScore = function(totalRed, totalGreen, totalBlue, num) {
         return 0;
     }
     return (totalRed/num + totalGreen/num + totalBlue/num)/3;
-}
+};
 
 getChar = function(score) {
     for (var i = 0; i < scores['length'] - 1; i++) {
@@ -188,6 +165,6 @@ getChar = function(score) {
         }
     }
     return chars[chars['length'] -1];
-}
+};
 
 init();

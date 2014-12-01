@@ -4,13 +4,14 @@
     /*font-size:1em;*/
     font-size: 12px;
     font-weight:bold;
+    line-height: 50%;
 }
 
 .textRow {
-    height: 13px;
     margin: 0px;
     padding: 0px;
     border: 0px;
+    line-height: 50%
 }
 
 #infobox {
