@@ -10,6 +10,37 @@
     </div>
     <div class="tile">
         <div class="tile-header">
+            <a href="http://beta.dwett.com">Beta</a> | <a href="https://github.com/dwetterau/beta">GitHub</a>
+        </div>
+        <div class="tile-body">
+            <a href="http://beta.dwett.com"><img src="/images/beta.png"></a>
+                Recently I was using the Snapchat messaging functionality that allows messages to be read only once and
+                although I liked the idea, their interface for it was awful. Because of this, I set out to build a
+                similar messaging service that would also work on the web through shareable links. In the end, the
+                service converged to a system like email, with a subject and a body, with the body only being able to
+                be viewed once. I implemented this by having two records in a SQL table for each message, a metadata
+                record that stores the header and information about who sent it, and a message record that stores the
+                actual content of the message. The only request that can retrieve the content of the message deletes
+                the record from the database so that it can only be read once.
+            <br />
+            <br />
+                One interesting feature I added that Snapchat's messenger doesn't have is the possibility for
+                anonymity. You can use the website and generate a message without it being to tied to an account of any
+                kind. The downside is that the first person who gets the shareable link is the only one who can view it.
+                To enable more control over the message, you can create an account and specify a recipient who will then
+                be the only person who can ever retrieve the message body from the server (not even the sender can see
+                it again).
+            <br />
+            <br />
+                I'll probably add more functionality to this project in the future because I'm very much interested in
+                how the world communicates. I think there's something very fundamental to how we interact that a
+                messaging service like this or Snapchat provides; spoken word is often not recorded forever like most
+                services around today. I believe that because of this, there will always be a desire for record-less
+                communication.
+        </div>
+    </div>
+    <div class="tile">
+        <div class="tile-header">
             <a href="http://alpha.dwett.com">Alpha</a> | <a href="https://github.com/dwetterau/alpha">GitHub</a>
         </div>
         <div class="tile-body">
