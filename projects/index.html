@@ -1,185 +1,193 @@
 <html>
-  <head>
+<head>
     <link rel="stylesheet" type="text/css" href="../stylesheets/dwett.css">
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="../javascripts/dwett.js" defer></script>
-  </head>
-  <body>
-    <div class="section_title" id="project_header">
-        Projects
+</head>
+<body>
+<div class="container">
+    <div class="page-header">
+        <h1>Projects</h1>
     </div>
     <div class="tile">
+        <legend>Beta</legend>
         <div class="tile-header">
-            <a href="http://beta.dwett.com">Beta</a> | <a href="https://github.com/dwetterau/beta">GitHub</a>
+            <a href="http://beta.dwett.com">Website</a> | <a href="https://github.com/dwetterau/beta">GitHub</a>
         </div>
         <div class="tile-body">
             <a href="http://beta.dwett.com"><img src="/images/beta.png"></a>
-                Recently I was using the Snapchat messaging functionality that allows messages to be read only once and
-                although I liked the idea, their interface for it was awful. Because of this, I set out to build a
-                similar messaging service that would also work on the web through shareable links. In the end, the
-                service converged to a system like email, with a subject and a body, with the body only being able to
-                be viewed once. I implemented this by having two records in a SQL table for each message, a metadata
-                record that stores the header and information about who sent it, and a message record that stores the
-                actual content of the message. The only request that can retrieve the content of the message deletes
-                the record from the database so that it can only be read once.
+            Recently I was using the Snapchat messaging functionality that allows messages to be read only once and
+            although I liked the idea, their interface for it was awful. Because of this, I set out to build a
+            similar messaging service that would also work on the web through shareable links. In the end, the
+            service converged to a system like email, with a subject and a body, with the body only being able to
+            be viewed once. I implemented this by having two records in a SQL table for each message, a metadata
+            record that stores the header and information about who sent it, and a message record that stores the
+            actual content of the message. The only request that can retrieve the content of the message deletes
+            the record from the database so that it can only be read once.
             <br />
             <br />
-                One interesting feature I added that Snapchat's messenger doesn't have is the possibility for
-                anonymity. You can use the website and generate a message without it being to tied to an account of any
-                kind. The downside is that the first person who gets the shareable link is the only one who can view it.
-                To enable more control over the message, you can create an account and specify a recipient who will then
-                be the only person who can ever retrieve the message body from the server (not even the sender can see
-                it again).
+            One interesting feature I added that Snapchat's messenger doesn't have is the possibility for
+            anonymity. You can use the website and generate a message without it being to tied to an account of any
+            kind. The downside is that the first person who gets the shareable link is the only one who can view it.
+            To enable more control over the message, you can create an account and specify a recipient who will then
+            be the only person who can ever retrieve the message body from the server (not even the sender can see
+            it again).
             <br />
             <br />
-                I'll probably add more functionality to this project in the future because I'm very much interested in
-                how the world communicates. I think there's something very fundamental to how we interact that a
-                messaging service like this or Snapchat provides; spoken word is often not recorded forever like most
-                services around today. I believe that because of this, there will always be a desire for record-less
-                communication.
+            I'll probably add more functionality to this project in the future because I'm very much interested in
+            how the world communicates. I think there's something very fundamental to how we interact that a
+            messaging service like this or Snapchat provides; spoken word is often not recorded forever like most
+            services around today. I believe that because of this, there will always be a desire for record-less
+            communication.
         </div>
     </div>
     <div class="tile">
+        <legend>Alpha</legend>
         <div class="tile-header">
-            <a href="http://alpha.dwett.com">Alpha</a> | <a href="https://github.com/dwetterau/alpha">GitHub</a>
+            <a href="http://alpha.dwett.com">Website</a> | <a href="https://github.com/dwetterau/alpha">GitHub</a>
         </div>
         <div class="tile-body">
             <a href="http://alpha.dwett.com"><img src="/images/alpha.png"></a>
-                I was preparing for an interview with <a href="http://www.imgur.com">Imgur</a> in my senior year of
-                college and one thing I decided to do was familiarize myself with the technologies they said they used
-                on their public blog. I went about this by trying to implement as much as Imgur as I could and I got
-                pretty far (except I ended up using node.js instead of PHP). The application I made was a node app
-                written in Coffeescript that uses MySQL (with an ORM), Redis for image ranking, and nginx.
+            I was preparing for an interview with <a href="http://www.imgur.com">Imgur</a> in my senior year of
+            college and one thing I decided to do was familiarize myself with the technologies they said they used
+            on their public blog. I went about this by trying to implement as much as Imgur as I could and I got
+            pretty far (except I ended up using node.js instead of PHP). The application I made was a node app
+            written in Coffeescript that uses MySQL (with an ORM), Redis for image ranking, and nginx.
             <br />
             <br />
-                At one point, my friends at school wanted to try using it so I started hosting it on my tiny
-                DigitalOcean instance and let them use it and help me refine it. The live website itself can be found
-                at the link above and of course all of the code can be found on Github.
+            At one point, my friends at school wanted to try using it so I started hosting it on my tiny
+            DigitalOcean instance and let them use it and help me refine it. The live website itself can be found
+            at the link above and of course all of the code can be found on Github.
         </div>
     </div>
     <div class="tile">
+        <legend>Countdera</legend>
         <div class="tile-header">
-            <a href="/projects/countdera">Countdera</a> | <a href="https://github.com/dwetterau/countdera">GitHub</a>
+            <a href="http://countdera.me">Demo</a> |
+            <a href="https://github.com/dwetterau/countdera">GitHub</a>
         </div>
         <div class="tile-body">
             <a href="/projects/countdera"><img src="/images/countdera.png"></a>
-                At HackTX 2014, my college friends and I decided to make a web application that could potentially
-                replace display advertising on the internet. The inspiration for this project was a project called
-                <a href="https://news.ycombinator.com/item?id=6713537">Tidbit</a>, which mined bitcoins in a browser
-                when someone visited a website. We like to think of this approach as a way to pay for the websites you
-                use everyday with your CPU cycles (after opting in) instead of your personal information (which is what
-                targetted advertising today relies on).
+            At HackTX 2014, my college friends and I decided to make a web application that could potentially
+            replace display advertising on the internet. The inspiration for this project was a project called
+            <a href="https://news.ycombinator.com/item?id=6713537">Tidbit</a>, which mined bitcoins in a browser
+            when someone visited a website. We like to think of this approach as a way to pay for the websites you
+            use everyday with your CPU cycles (after opting in) instead of your personal information (which is what
+            targetted advertising today relies on).
             <br />
             <br />
-                Countdera specifically was a Javascript Framework that allowed people to upload map and reduce functions
-                (written in Javascript), provide links to input files, and run MapReduce style jobs on their input data.
-                We demonstrated this functionality at the hackathon with a simple word counting program running on the
-                text of the US constitution and you can see how this works in
-                <a href="https://www.dropbox.com/s/qn03a659bh1k49h/20141019_102403.mp4?dl=0">this video</a>. We used
-                Firebase as a way to keep track of all the worker nodes (visitors to websites with an embedded iframe
-                instead  of a display ad) and as a way for worker nodes to communicate to each other. We also didn't
-                exactly implement MapReduce, the day before the hackathon, I designed a protocol for us to implement
-                which is described in great detail at the link above. This worked reasonably well but there are a few
-                optimizations and improvements that we would need to make to deploy something like this that we outline
-                on the GitHub readme. The reception of Countdera at the hackathon was quite positive and we even had the
-                opportunity to present it in the finals to all of the contestants.
+            Countdera specifically was a Javascript Framework that allowed people to upload map and reduce functions
+            (written in Javascript), provide links to input files, and run MapReduce style jobs on their input data.
+            We demonstrated this functionality at the hackathon with a simple word counting program running on the
+            text of the US constitution and you can see how this works in
+            <a href="https://www.dropbox.com/s/qn03a659bh1k49h/20141019_102403.mp4?dl=0">this video</a>. We used
+            Firebase as a way to keep track of all the worker nodes (visitors to websites with an embedded iframe
+            instead  of a display ad) and as a way for worker nodes to communicate to each other. We also didn't
+            exactly implement MapReduce, the day before the hackathon, I designed a protocol for us to implement
+            which is described in great detail at the link above. This worked reasonably well but there are a few
+            optimizations and improvements that we would need to make to deploy something like this that we outline
+            on the GitHub readme. The reception of Countdera at the hackathon was quite positive and we even had the
+            opportunity to present it in the finals to all of the contestants.
             <br />
             <br />
-                I personally believe that the world is moving in a direction that will value personal privacy more than
-                in the past and I think that eliminating targeted advertising is a good start. I even wrote a
-                <a href="/assets/OnlineTracking.pdf">very long paper</a> about targeted advertising once for a class in
-                college. I built Countdera with John Agnew, Dan Rutledge, Jim Given, and Josh Slocum.
+            I personally believe that the world is moving in a direction that will value personal privacy more than
+            in the past and I think that eliminating targeted advertising is a good start. I even wrote a
+            <a href="/assets/OnlineTracking.pdf">very long paper</a> about targeted advertising once for a class in
+            college. I built Countdera with John Agnew, Dan Rutledge, Jim Given, and Josh Slocum.
         </div>
     </div>
     <div class="tile">
+        <legend>Touch</legend>
         <div class="tile-header">
-            <a href="http://challengepost.com/software/touch">Touch</a> |
+            <a href="http://challengepost.com/software/touch">Demo</a> |
             <a href="https://github.com/obi1kenobi/ychacks2014">GitHub</a>
         </div>
         <div class="tile-body">
             <a href="http://challengepost.com/software/touch"><img src="/images/touch.png"></a>
-                A fellow Dropbox intern and I in the summer of 2014 got together with a full-time designer who was new
-                at Dropbox and a mutual friend to build something for
-                <a href="http://blog.ycombinator.com/yc-hacks-august-2-3-2014">Y Combinator Hacks 2014</a>. We met
-                several times before the hackathon to discuss ideas and how we would build them and eventually settled
-                on building a lightweight event planning tool to facilitate planning short-lived or spontaneous events
-                like grabbing dinner with some friends for instance.
+            A fellow Dropbox intern and I in the summer of 2014 got together with a full-time designer who was new
+            at Dropbox and a mutual friend to build something for
+            <a href="http://blog.ycombinator.com/yc-hacks-august-2-3-2014">Y Combinator Hacks 2014</a>. We met
+            several times before the hackathon to discuss ideas and how we would build them and eventually settled
+            on building a lightweight event planning tool to facilitate planning short-lived or spontaneous events
+            like grabbing dinner with some friends for instance.
             <br />
             <br />
-                When we got to the hackathon, we realized that one of the APIs that we had planned to use (Facebook's
-                chat API) was not going to be accessible to us so we switched gears 6 hours into the contest to build
-                Touch. The motivation behind Touch is that your phone is pretty useless when you're sitting at a
-                computer at work or at home. We thought it would be cool to provide contextually relevant buttons for
-                your phone to interact with your computer as an extension of your keyboard. Touch also ended up doubling
-                as a fantastic presenter's tool, enabling someone in keynote to switch to a YouTube video for instance
-                in the middle of the presentation and back without touching their computer.
+            When we got to the hackathon, we realized that one of the APIs that we had planned to use (Facebook's
+            chat API) was not going to be accessible to us so we switched gears 6 hours into the contest to build
+            Touch. The motivation behind Touch is that your phone is pretty useless when you're sitting at a
+            computer at work or at home. We thought it would be cool to provide contextually relevant buttons for
+            your phone to interact with your computer as an extension of your keyboard. Touch also ended up doubling
+            as a fantastic presenter's tool, enabling someone in keynote to switch to a YouTube video for instance
+            in the middle of the presentation and back without touching their computer.
             <br />
             <br />
-                We relied on Firebase to be a secure communication channel between the computer and your phone. Touch
-                only works on Macs currently because it uses something called AppleScript to scrape what tabs you have
-                open in chrome or what native applications you are running. More technical details about Touch can be
-                found on the GitHub readme. I built Touch with Damon Doucet, Predrag Gruevski, and Ryhan Hassan and
-                although we didn't win anything at YC Hacks, we really enjoyed the experience.
+            We relied on Firebase to be a secure communication channel between the computer and your phone. Touch
+            only works on Macs currently because it uses something called AppleScript to scrape what tabs you have
+            open in chrome or what native applications you are running. More technical details about Touch can be
+            found on the GitHub readme. I built Touch with Damon Doucet, Predrag Gruevski, and Ryhan Hassan and
+            although we didn't win anything at YC Hacks, we really enjoyed the experience.
         </div>
     </div>
     <div class="tile">
+        <legend>3D JS physics engine</legend>
         <div class="tile-header">
-            <a href="/projects/JSPhysics/demos/boxBallDemo.html"> 3D JS physics engine</a> |
+            <a href="/projects/JSPhysics/demos/boxBallDemo.html">Demo</a> |
             <a href="https://github.com/dwetterau/JSPhysics">GitHub</a>
         </div>
         <div class="tile-body">
             <a href="/projects/JSPhysics/demos/boxBallDemo.html"><img src="/images/3d-demo.png"></a>
-                I have always enjoyed physics and the math behind it so when I learned to program, some of the first
-                things I made were physics simulations. This is probably the fourth or fifth one
-                I made but it was the first to include many complex collisions in 3 dimensions.
+            I have always enjoyed physics and the math behind it so when I learned to program, some of the first
+            things I made were physics simulations. This is probably the fourth or fifth one
+            I made but it was the first to include many complex collisions in 3 dimensions.
             <br /><br />
-                My parents gave me a fantastic book on how to implement a commercial physics engine one Christmas and
-                after reading through it, I decided to implement a physics engine like the one the author described in
-                Javascript leveraging WebGL libraries for rendering. While implementing this engine, I actually found
-                some errata in the book and <a href="https://github.com/idmillington/cyclone-physics/pull/26">corrected
-                them</a> in the author's open source C++ implementation. Some small demos of the engine working can be
-                seen at the link above and all of the code is available on GitHub.
+            My parents gave me a fantastic book on how to implement a commercial physics engine one Christmas and
+            after reading through it, I decided to implement a physics engine like the one the author described in
+            Javascript leveraging WebGL libraries for rendering. While implementing this engine, I actually found
+            some errata in the book and <a href="https://github.com/idmillington/cyclone-physics/pull/26">corrected
+            them</a> in the author's open source C++ implementation. Some small demos of the engine working can be
+            seen at the link above and all of the code is available on GitHub.
         </div>
     </div>
     <div class="tile">
+        <legend>Dwopbox</legend>
         <div class="tile-header">
-            Dwopbox |
             <a href="https://github.com/dwetterau/Dwopbox">GitHub</a>
         </div>
         <div class="tile-body">
             <a href="/images/dwopbox.png"><img src="/images/dwopbox.png"></a>
-                My college roommates and I built what we eventually called "Dwopbox" during HackTX 2013. We were
-                surprisingly successful during the hackathon and actually
-                <a href="http://techzette.com/2013-hacktx-winners-and-finalists/">won the "Hacker Lounge" prize </a>
-                for this project. Dwopbox is a peer-to-peer file sharing system written entirely in Javascript that
-                uses WebRTC channels to transmit files.
+            My college roommates and I built what we eventually called "Dwopbox" during HackTX 2013. We were
+            surprisingly successful during the hackathon and actually
+            <a href="http://techzette.com/2013-hacktx-winners-and-finalists/">won the "Hacker Lounge" prize </a>
+            for this project. Dwopbox is a peer-to-peer file sharing system written entirely in Javascript that
+            uses WebRTC channels to transmit files.
             <br /><br />
-                We built Dwopbox in the midst of many of Edward Snowden's NSA revelations which inspired us to think of
-                a new way to share files across the Internet without the contents of the files themselves getting into
-                the hands of a government. Dwopbox consisted of two parts, a simple Postgres database that stored file
-                metadata, and a distributed protocol we created (essentially a simplified version of BitTorrent). The
-                protocol allows users who joined a "room" to receive information about the files that the original user
-                was sending. Using Chrome's local storage support, we first loaded the chosen files into the
-                broadcaster's web browser, then started sending pieces of the file to other web browsers through WebRTC
-                data channels. Once a viewer has all parts of the file, some client-side Javascript reconstructs the
-                file by pulling it out of local storage and immediately "downloading" it to the device.
+            We built Dwopbox in the midst of many of Edward Snowden's NSA revelations which inspired us to think of
+            a new way to share files across the Internet without the contents of the files themselves getting into
+            the hands of a government. Dwopbox consisted of two parts, a simple Postgres database that stored file
+            metadata, and a distributed protocol we created (essentially a simplified version of BitTorrent). The
+            protocol allows users who joined a "room" to receive information about the files that the original user
+            was sending. Using Chrome's local storage support, we first loaded the chosen files into the
+            broadcaster's web browser, then started sending pieces of the file to other web browsers through WebRTC
+            data channels. Once a viewer has all parts of the file, some client-side Javascript reconstructs the
+            file by pulling it out of local storage and immediately "downloading" it to the device.
             <br /><br />
-                The friends I worked on this project with were Calvin MacKenzie, Josh Slocum, Dan Rutledge, and
-                Adam Faulkner.
+            The friends I worked on this project with were Calvin MacKenzie, Josh Slocum, Dan Rutledge, and
+            Adam Faulkner.
         </div>
     </div>
     <div class="tile">
+        <legend>2D JS physics engine</legend>
         <div class="tile-header">
-            <a href="/projects/JSPhysics/legacy"> 2D JS physics engine</a> |
+            <a href="/projects/JSPhysics/legacy">Demo</a> |
             <a href="https://github.com/dwetterau/JSPhysics/tree/master/legacy">GitHub</a>
         </div>
         <div class="tile-body">
             <a href="/projects/JSPhysics/legacy"><img src="/images/2d-demo.png"></a>
-                I implemented a 2-dimensional bouncing ball simulation to experiment with Javascript's access to device
-                accelerometer data and the math behind momentum based glancing collisions. It was a lot of fun to derive
-                the math behind elastic collisions that aren't head on. One interesting result of this was a almost
-                labyrinth-style simulation on mobile devices (and some MacBook Pros). You can see the working simulation
-                at the link above and the source code is hosted on GitHub.
+            I implemented a 2-dimensional bouncing ball simulation to experiment with Javascript's access to device
+            accelerometer data and the math behind momentum based glancing collisions. It was a lot of fun to derive
+            the math behind elastic collisions that aren't head on. One interesting result of this was a almost
+            labyrinth-style simulation on mobile devices (and some MacBook Pros). You can see the working simulation
+            at the link above and the source code is hosted on GitHub.
         </div>
     </div>
     <div class="tile tile-body full-width">
@@ -188,5 +196,6 @@
     <div class="tile tile-body">
         <a href="/" class="transition">Back</a>
     </div>
-  </body>
+</div>
+</body>
 </html>

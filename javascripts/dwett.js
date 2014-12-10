@@ -1,6 +1,6 @@
 $('#about_link, #return_link').on('click', function(event) {
   var target = $(this).get(0).id == 'about_link' ? 
-      $('#about') : $('#title_container');
+      $('#about_container') : $('#title_container');
   $('html, body').stop().animate({
     scrollTop: target.offset().top
   }, 500);
@@ -8,8 +8,7 @@ $('#about_link, #return_link').on('click', function(event) {
 });
 
 $(document).ready(function() {
-  $("body").css("display", "none");
-  $("body").fadeIn(250);
+  $("body").css("display", "none").fadeIn(250);
 
   $("a.transition").click(function(event) {
     event.preventDefault();
