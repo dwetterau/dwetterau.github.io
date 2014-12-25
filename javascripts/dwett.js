@@ -1,12 +1,3 @@
-$('#about_link, #return_link').on('click', function(event) {
-  var target = $(this).get(0).id == 'about_link' ? 
-      $('#about_container') : $('#title_container');
-  $('html, body').stop().animate({
-    scrollTop: target.offset().top
-  }, 500);
-  return false;
-});
-
 $(document).ready(function() {
   $("body").css("display", "none").fadeIn(250);
 
