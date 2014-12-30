@@ -126,6 +126,23 @@ legend i {
   float: right;
 }
 
+legend a:link {
+  color: #333;
+}
+
+legend a:visited {
+  color: #333;
+}
+
+legend a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+legend a:active {
+  color: #333;
+}
+
 .tile {
   background: #fff;
   box-shadow: 0 3px 10px rgba(0, 0, 0, .23), 0 3px 10px rgba(0, 0, 0, .16);
