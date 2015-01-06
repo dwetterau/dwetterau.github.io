@@ -276,6 +276,31 @@
             at the link above and the source code is hosted on GitHub.
         </div>
     </div>
+    <div class="tile">
+        <legend>
+            <a id="old-site" href="/projects#old-site">Old Website</a>
+            <i>September 2012</i>
+        </legend>
+        <div class="tile-header">
+            <a href="/projects/old_site">Demo</a> |
+            <a href="https://github.com/dwetterau/dwett.com/tree/master/projects/old_site">GitHub</a>
+        </div>
+        <div class="tile-body">
+            <a href="/projects/old_site"><img src="/images/old_site.png"></a>
+            After my first internship, I my friend Adam showed me his intern hosts website which had this cool effect
+            where it turned a random image into colored ASCII text and rendered it. I wanted to emulate the same effect
+            so I made my first student website at UT Austin (originally at cs.utexas.edu/~david) be a page that
+            converted three chosen images into black and white text, colored text, or showed the original photo. Over
+            the years I tweaked this page as I added more projects and did more work before eventually purchasing my
+            first domain (dwett.com) and making a new website for it.
+            <br /><br />
+            The effect works by examining the pixels that each character is representing, determining the average color
+            (for the text color) and the overall density. This density is then used to determine which character
+            should be displayed. For example, a very dark area would be rendered with a '@' while a very light area
+            might be rendered with '`'. I scored each character in a separate java program that literally rendered each
+            character in a white area and calculated the number of pixels that were black using a monospace font.
+        </div>
+    </div>
     <div class="tile tile-body full-width">
         For more, check out my <a href="https://www.github.com/dwetterau">GitHub page</a>.
     </div>
