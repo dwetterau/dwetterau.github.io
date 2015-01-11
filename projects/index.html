@@ -176,6 +176,37 @@
     </div>
     <div class="tile">
         <legend>
+            <a id="turingpoke" href="/projects#turingpoke">TuringPoké</a>
+            <i>February 2014</i>
+        </legend>
+        <div class="tile-header">
+            <a href="https://github.com/dwetterau/turingpoke">GitHub</a>
+        </div>
+        <div class="tile-body">
+            <a href="https://github.com/dwetterau/turingpoke"><img src="/images/turingpoke.png"></a>
+            In the middle of February of 2014, a phenomenon called <i>Twitch Plays Pokémon</i> (TPP) swept the media and
+            my friend group. The idea was to stream the playing of a video game in such a way that the people watching
+            could submit moves to the game and either make progress or cause mayhem. More information on the original
+            game can be found in a nice writeup on <a href="http://en.wikipedia.org/wiki/Twitch_Plays_Pok%C3%A9mon">
+            Wikipedia</a> about it.
+            <br />
+            <br />
+            During this time, I decided it would be fun if some of my college friends and I played our own version of it
+            so I threw together this project. The project worked by running a laptop in my house at all times with an
+            emulator on it running a GameBoy game. I then used the utility ffmpeg to stream a portion of the screen
+            that included both the emulator and a console through a webserver powered by
+            <a href="https://github.com/phoboslab/jsmpeg">jsmpeg</a>. I then created a small node application that
+            served a canvas that showed the stream from my laptop and submitted commands or chat messages from users
+            to the emulator itself using the xdotool utility.
+            <br />
+            <br />
+            I shared my version of TPP with my CS honors program at UT (the Turing Scholars program) and we actually
+            managed to play through an entire game of Pokémon and win before the real TPP stream did. A more detailed
+            writeup on how all the components of this project worked together can be found in the readme on GitHub.
+        </div>
+    </div>
+    <div class="tile">
+        <legend>
             <a id="3d" href="/projects#3d">3D JS physics engine</a>
             <i>December 2013 - January 2014</i>
         </legend>
