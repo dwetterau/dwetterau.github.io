@@ -139,6 +139,43 @@
             college. I built Countdera with John Agnew, Dan Rutledge, Jim Given, and Josh Slocum.
         </div>
     </div>
+       <div class="tile">
+        <legend>
+            <a id="grouped" href="/projects#grouped">Grouped</a>
+            <i>August 2014</i>
+        </legend>
+        <div class="tile-header">
+            <a href="https://grouped.firebaseapp.com">Demo</a> |
+            <a href="https://github.com/dwetterau/group-edit">GitHub</a>
+        </div>
+        <div class="tile-body">
+            <a href="https://grouped.firebaseapp.com"><img src="/images/grouped.png"></a>
+            After my internship at Dropbox I became interested in ways that people collaborated in documents. I set out
+            to emulate the Google docs product or at least the real-time collaborative editing part. I read through some
+            of the research on the subject and settled on
+            <a href="https://hal.inria.fr/file/index/docid/71240/filename/RR-5580.pdf">this paper</a> that was able to
+            provide collaborative editing without the use of operational transforms. An implementation of this paper in
+            a textarea element using Firebase as the backend is what is available at the demo link above.
+            <br />
+            <br />
+            The issue with this paper that I quickly found is that there is never a way to checkpoint the document since
+            someone could always come back online (and change the order of many events), and this makes the calculation
+            that computes the state of the document more and more expensive over time (even if you delete everything). I
+            thought of an interesting alternative approach that involved using a data structure backed by a
+            <a href="https://github.com/dwetterau/node-skiplist">skip list</a> that is sorted by
+            <a href="https://github.com/dwetterau/base64-math">base 64 encoded strings</a>. The way my idea worked was
+            based off the fact that there is always a rational number between any two rational numbers. Because of this
+            simple fact, if you have two items and insert one between them (corresponding inserting a character in a
+            string) you can always generate a unique and totally orderable id for that new character.
+            <br />
+            <br />
+            I made a good amount of progress on implementing my new technique, but eventually ran into a weird case
+            that happens if two clients (at least one being offline) edit between the same two characters. My solution
+            would work meaning it would be eventually consistent, but it would not being intention preserving and
+            characters would be interleaved in a strange way. If I ever think of a way to fix it, I might revive this
+            project.
+        </div>
+    </div>
     <div class="tile">
         <legend>
             <a id="touch" href="/projects#touch">Touch</a>
