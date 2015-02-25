@@ -328,6 +328,36 @@
     </div>
     <div class="tile">
         <legend>
+            <a id="simple-tanks" href="/projects#simple-tanks">Simple Tanks</a>
+            <i>November 2012</i>
+        </legend>
+        <div class="tile-header">
+            <a href="https://github.com/dwetterau/simpleTanks">GitHub</a>
+        </div>
+        <div class="tile-body">
+            <a href="/images/simple-tanks.png"><img src="/images/simple-tanks.png"></a>
+            In my operating systems class first semester sophomore year, my project partner, Adam Faulkner, and I set
+            out on an ambitious final project. The class required us to build an operating system called
+            <a href="http://pdos.csail.mit.edu/6.828/2012/overview.html">JOS</a> using some skeleton code. We got to
+            start by implementing the bootloader in x86 assembly and slowly moving up through memory management, file
+            io, process communication, and eventually a functioning shell. Our professor had us choose whatever final
+            project we wanted to Adam and I chose to enable graphics mode and write some cool stuff to run on our
+            operating system.
+            <br /><br />
+            We wrote this game to run on an emulator running our OS mainly because memory was an issue and the game
+            state was fully encoded in the framebuffer (the pixels for the ground). In order to compute the arcs that
+            the bullets traveled, we had to also enable the floating point unit and allow our operating system to make
+            trigonometry calls such as sine and cosine. The game is written in C using SDL and takes in basic keyboard
+            input. The other fun part of this project however was getting text to render. Since we weren't in text mode
+            in our OS, we had to use a bitmap font and render characters ourselves.
+            <br /><br />
+            In the end, our professor and TA really loved our project and gave it the best project award. We had also
+            ported my <a href="/projects#CRasterization">C Rasterizater</a> to render some 3D triangles, cubes, and axis
+            lines all within a tiny emulator running an OS that we wrote ourselves.
+        </div>
+    </div>
+    <div class="tile">
+        <legend>
             <a id="2d" href="/projects#2d">2D JS physics engine</a>
             <i>November 2012</i>
         </legend>
@@ -388,10 +418,10 @@
             <br /><br />
             I taught myself what matrix operations I needed to perform to render scenes in 3D and wrote the graphics
             part of this project in the second semester of my freshman year. The result could render triangles with
-            colors along with points and wireframes. Later when I was taking Operating Systems, my project partner and
+            colors along with points and wireframes. Later when I was taking operating systems, my project partner and
             I enabled graphics mode in our OS and ported this library to work on the operating system we wrote. This
-            library (and a game that we wrote for the project as well) really wowed the professor and we won the best
-            project prize for that year.
+            library (and a <a href="/projects#simple-tanks">game</a> that we wrote for the project as well) really wowed
+            the professor and we won the best project prize for that year.
         </div>
     </div>
     <div class="tile tile-body full-width">
