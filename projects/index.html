@@ -340,19 +340,18 @@
             out on an ambitious final project. The class required us to build an operating system called
             <a href="http://pdos.csail.mit.edu/6.828/2012/overview.html">JOS</a> using some skeleton code. We got to
             start by implementing the bootloader in x86 assembly and slowly moving up through memory management, file
-            io, process communication, and eventually a functioning shell. Our professor had us choose whatever final
-            project we wanted to Adam and I chose to enable graphics mode and write some cool stuff to run on our
+            I/O, process communication, and eventually a functioning shell. Our professor had us choose whatever final
+            project we wanted so Adam and I chose to enable graphics mode and write some cool programs to run on our
             operating system.
             <br /><br />
             We wrote this game to run on an emulator running our OS mainly because memory was an issue and the game
             state was fully encoded in the framebuffer (the pixels for the ground). In order to compute the arcs that
-            the bullets traveled, we had to also enable the floating point unit and allow our operating system to make
+            the bullets traveled in, we had to also enable the floating point unit and allow our operating system to make
             trigonometry calls such as sine and cosine. The game is written in C using SDL and takes in basic keyboard
             input. The other fun part of this project however was getting text to render. Since we weren't in text mode
-            in our OS, we had to use a bitmap font and render characters ourselves.
-            <br /><br />
-            In the end, our professor and TA really loved our project and gave it the best project award. We had also
-            ported my <a href="/projects#CRasterization">C Rasterizater</a> to render some 3D triangles, cubes, and axis
+            in our OS, we had to use a bitmap font and render characters ourselves. In the end, our professor and TA
+            really loved our project and gave it the best project award. We had also ported my
+            <a href="/projects#CRasterization">C Rasterizater</a> to render some 3D triangles, cubes, and axis
             lines all within a tiny emulator running an OS that we wrote ourselves.
         </div>
     </div>
