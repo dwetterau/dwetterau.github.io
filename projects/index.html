@@ -12,10 +12,11 @@
     </div>
     <div class="rise">
         <legend>
-            <a id="Rise" href="/projects#rise">Life</a>
+            <a id="Rise" href="/projects#rise">Rise</a>
             <i>March 2015</i>
         </legend>
         <div class="tile-header">
+            <a href="https://youtu.be/urUvRSFRphg">Video</a> |
             <a href="https://github.com/dwetterau/rise">GitHub</a>
         </div>
         <div class="tile-body">
@@ -27,18 +28,18 @@
             a smiley face before it would turn off in the morning.
             <br />
             <br />
-            Rise is firstly an alarm clock, I found a great guide on the internet on how to make an alarm clock
-            Android application so I followed that pretty closely for this part. I then built a scanner that used
-            Android's interface with the camera to look for a specific smiley face in order to turn off the alarm. The
-            picture of the smiley face that the app recognizes is above.
+            Rise is firstly an alarm clock, I found a <a href="http://www.steventrigg.com/alarm-clock-tutorials/">great
+            guide</a> on how to make an alarm clock Android application so I followed that pretty closely for this part.
+            I then built a scanner that used Android's interface with the camera to look for a specific smiley face in
+            order to turn off the alarm. The picture of the smiley face that the app recognizes is above.
             <br />
             <br />
             Instead of using some computer vision library to detect the face, I made a very simple algorithm to detect
-            it quickly (but less robustly). Essentially, the algorithm takes an image as input and shoots out four rays
-            from the center in the four cardinal directions. It then checks that the two arrows going east and west do
-            not intersect any lines. After this, it makes sure that the north ray intersects one line and the south ray
-            intersects two lines, all of approximately the same width. The line detection is done by a simple threshold
-            on the color intensity (hence the black and white face).
+            it quickly (albeit less robustly). Essentially, the algorithm takes an image as input and shoots out four
+            rays from the center in the four cardinal directions. It then checks that the two arrows going east and west
+            do not intersect any lines. After this, it makes sure that the north ray intersects one line and the south
+            ray intersects two lines, all of approximately the same width. The line detection is done by a simple
+            threshold on the color intensity (hence the black and white face).
         </div>
     </div>
     <div class="tile">
