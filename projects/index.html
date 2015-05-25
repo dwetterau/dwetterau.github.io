@@ -23,9 +23,9 @@
             <a href="//youtu.be/zra1BBbc2bg"><img src="/images/spooter.png"></a>
             At the end of my senior year of undergraduate at UT, Josh Slocum, Dillon Walker, and I were bored and
             couldn't decide what game to play. We had recently been playing a game at
-            <a href="http://agar.io/">agar.io</a> and having a bit of fun, but decided we wanted to write our own game
-            instead. We initially spent approximately 3 hours working on the game and after these initial 3 hours we
-            had a working multiplayer game with shooting which is demonstrated in the video linked above.
+            <a href="http://agar.io/">agar.io</a> and were having a bit of fun, but decided we wanted to write our own
+            game instead. We initially spent approximately 3 hours working on the game and after these initial 3 hours
+            we had a working multiplayer game which is demonstrated in the video linked above.
             <br />
             <br />
             The game uses <a href="http://socket.io/">Socket.IO</a> to broadcast game state from the server to the
@@ -34,13 +34,15 @@
             update of all entities at each time step. The game consists of two teams: players (actual users) and enemies
             that employ a simple AI to move and shoot at the players. We added the simple AI to the game after the
             initial video and it simply moves enemies around until they can "see" a player, at which point they follow
-            and try to shoot accurately.
+            and try to shoot accurately. When players kill enemies, they grow larger and more powerful, but also move
+            more slowly.
             <br />
             <br />
             Some later optimizations we added involved reducing small object creation and eliminating JSON serialization
-            to the state transfer. We wrote our own simple serialization code to a JavaScript ArrayBuffer which resulted
-            in at least twice as fast sending of states from the server to the clients. In addition we spent some time
-            making sure that we reused objects whenever possible to avoid large GC overheads.
+            in the state transfer. We wrote our own simple serialization code to convert the game state to a JavaScript
+            ArrayBuffer which resulted in at least a 2x performance improvement over using simple JSON serialization.
+            In addition we spent some time making sure that we reused objects whenever possible to avoid large GC
+            overheads.
         </div>
     </div>
     <div class="tile">
