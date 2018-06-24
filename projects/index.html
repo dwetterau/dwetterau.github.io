@@ -14,15 +14,128 @@
     </div>
     <div class="tile">
         <h3>
-            <a id="project-name" href="/projects#project-name"></a>
-            <i></i>
+            <a id="habits" href="/projects#habits">Habits</a>
+            <i>March 2018</i>
         </h3>
         <div class="tile-header">
-
+            <a href="//github.com/dwetterau/habits">GitHub</a>
         </div>
-        <div class="tile-body>">
-            <img />
-
+        <div class="tile-body">
+            <a href="//github.com/dwetterau/habits"><img src="/images/habits.png"></a>
+            After spending so much time thinking about measuring and monitoring productivity, I realized
+            that a separate but somewhat related problem in my own life was establishing and maintaining
+            habits. In particular, I seem to have a tendency to start to do something (such as write
+            my thoughts or reflections down regularly) but then after a few months, I would lapse.
+            <br />
+            <br />
+            I think the main reasons for lapsing on these habits would be that I would miss doing it
+            a handful of times, and then forget. In the off chance that a habit ended up being useless,
+            this would be a totally natural and good process, but I kept thinking that there were other
+            classes of habits that are pretty much universally good - such as flossing - that are equally
+            hard to establish and maintain.
+            <br />
+            <br />
+            Having just gotten a new Android phone (Pixel 2), I decided to take a stab at making an Android
+            app again (having not done so in at least 4 years). The learning curve was a bit rough, but
+            it ended up not being too hard to get something working locally with all of the bells and
+            whistles that I wanted - editing, push notification reminders, etc.
+        </div>
+    </div>
+    <div class="tile">
+        <h3>
+            <a id="medb" href="/projects#medb">MeDB</a>
+            <i>December 2017</i>
+        </h3>
+        <div class="tile-header">
+            <a href="//github.com/dwetterau/medb">GitHub</a>
+        </div>
+        <div class="tile-body">
+            <a href="//github.com/dwetterau/medb"><img src="/images/medb.png"></a>
+            In between building <a href="/projects#life">Life</a> and <a href="/projects#starter">Starter</a>,
+            there was actually another project "Lens" (orginally Life3) that was built ontop of Meteor.
+            I usually prefer to talk about the "why" of my projects than the "what" as it pertains to the
+            particular technical stack that I use, but in this case my choice turned out to be a disaster.
+            Lens was meant to be a website building and organization application that leveraged paths instead
+            of hashtags to link content together. I still actually like a lot about the original publicity
+            settings of that project, but building it in Meteor was a huge mistake. I trapped myself into
+            a walled-garden that eventually became impossible to build in anymore.
+            <br />
+            <br />
+            Eventually, I abandoned Lens and imported what was there into Starter as a "Notes" tab.
+            This process was painful and so I spent some time thinking about a common data format that
+            I could use across applications and I arrived at the flat file. MeDB is a project that adds
+            a short plaintext header to text files, saves them into a git repo, and manages syncing them
+            to that repro via a UI built with <a href="//pagedraw.io">Pagedraw</a>. It was fun to build,
+            but after using it for a bit I got upset about the amount of time I was spending on the UI.
+            I also eventually discovered <a href="https://github.com/perkeep/perkeep">Perkeep</a> which
+            seems spiritually similar and deserves further investigation.
+        </div>
+    </div>
+    <div class="tile">
+        <h3>
+            <a id="bots" href="/projects#bots">Bots</a>
+            <i>June 2017</i>
+        </h3>
+        <div class="tile-header">
+            <a href="//github.com/dwetterau/bots">GitHub</a>
+        </div>
+        <div class="tile-body">
+            <a href="//github.com/dwetterau/bots"><img src="/images/bots.png"></a>
+            In the summer of 2017, I decided to revist one of my favorite books on game physics engine
+            design but this time with the intent of implementing a "Battlebots"-esque web application
+            that let users submit specifications for bots to batter.
+            <br />
+            <br />
+            I got pretty far into implementing the physics part of the project but didn't really get
+            into the whole collaborative website part. In particular, I ran into a wall where the engine
+            never really "felt right" and kept digging further into the math rather than building out
+            any of the rest of the experience. I think this was fine, I definitely enjoyed the exploration
+            back into this area of physics, but it's a shame that I never got all the kinks out. I might
+            have to take another stab at 2d physics simulation someday after I get a bit more background
+            on complex numbers, which seem to be the secret to making all the math work out nicely.
+        </div>
+    </div>
+    <div class="tile">
+        <h3>
+            <a id="starter" href="/projects#starter">Starter</a>
+            <i>October 2016</i>
+        </h3>
+        <div class="tile-header">
+            <a href="//starter.dwett.com">Website</a> |
+            <a href="//github.com/dwetterau/starter">GitHub</a>
+        </div>
+        <div class="tile-body">
+            <a href="//starter.dwett.com"><img src="/images/starter.png"/></a> Starter is my personal
+            take on a task tracking and management website similar to Trello or Maniphest. I started
+            building this project after realizing at a Dropbox hackathon how much nicer it was to build
+            websites in Python rather than Node.js. I was starting a new "starter" project (one that
+            I intended to fork multiple times but without much other than boilerplate itself) but then
+            ended up keeping the name and iterating on it over the past couple of years.
+            <br />
+            <br />
+            In the first phase of the project, Starter was a task tracking board with a calendar-like
+            "event" tracking interface. What this let you do was finely monitor how you were spending
+            your time in 15 minute chunks. When you started working on a new task, or finished one, the
+            corresponding event would be created or finished respectively. This ended up being sort of
+            fun but not all that useful - I never found myself actually reflecting on the higher-level
+            view of what I was doing or if I was happy with my productivity.
+            <br />
+            <br />
+            After becomming a bit uninterested in the project, my coworker pointed me towards the "Getting
+            things done" (or GTD) methodology and the associated book. After reading some of the book,
+            I realized that I could adapt Starter to be a tool to help me implement this in my own life,
+            or at least the parts that I found most useful. In particular, I scrubbed the side calendar-like
+            interface and replaced it with "captures" which have an associated webview that I have bookmarked
+            on my phone to be able to write down things at any time. Regularly, I then move captures into
+            tasks or delete them (if they're short and I can do them in < 2 minutes).
+            <br />
+            <br />
+            After about one and a half years, I'm still working on Starter as I find things - and definitely
+            still using it both for captures and for "contexts" - having separate (but also unified)
+            views of my personal tasks and work tasks has been quite useful as I've advanced through my
+            career so far. In the future, I'll explore more deep integrations into my real company's task
+            tracker - to keep tasks in sync, and potentially Google calendar to help keep my scheduling
+            overhead in check.
         </div>
     </div>
     <div class="tile">
