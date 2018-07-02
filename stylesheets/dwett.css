@@ -1,8 +1,20 @@
-* {
+html {
     font-family: "Courier New", Courier, monospace;
     background-color: #f6f9fc;
     color: #47525d;
     line-height: 130%;
+}
+
+a {
+    color: #47525d;
+}
+
+a:visited {
+    color: #47525d;
+}
+
+h1 {
+    padding-top: 1em;
 }
 
 /* Page centering */
@@ -32,8 +44,30 @@
 }
 
 /* Make sure each tile doesn't overlap */
-.tile {
-    display: inline-block;
+div.tile {
+    display: block;
+    box-sizing: border-box;
+    min-height: 2em;
+    padding: 1em;
+    margin: 0 0 1em 0;
+    border: 1px solid rgba(0, 0, 0, .04);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .03);
+    border-radius: 3px;
+    background-color: #FFFFFF;
+}
+
+div.tile h3 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+div.tile h3 i {
+    font-size: smaller;
+    float: right;
+}
+
+div.tile-header {
+    margin-bottom: 0.5em;
 }
 
 /* Constrain image size */
