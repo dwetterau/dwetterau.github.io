@@ -1,8 +1,15 @@
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="stylesheets/dwett.css">
-    <script src="js/dwett.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/davidw.css">
     <title>David Wetterau</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134203167-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-134203167-1');
+    </script>
 </head>
 <body>
 <div class="container">
@@ -11,16 +18,19 @@
             <h1>David Wetterau</h1>
         </div>
         <div id="nav_div">
-            <div class="tile">
-                <h3>About</h3>
-                <p>
-                    I am a Software Engineer at Dropbox in San Francisco where I work on the Filesystem
-                    team. I enjoy building systems and websites that solve problems in people's
-                    everyday lives. Before working at Dropbox full-time, I graduated from the honors
-                    CS department at the University of Texas at Austin. While attending college I
-                    worked at Dropbox, Google, and Indeed as a Software Engineering Intern and taught
-                    and researched distributed systems.
-                </p>
+            <div id="about" class="tile">
+                <div>
+                    <h3>About</h3>
+                    <p>
+                        I am a Software Engineer in San Francisco where I work on Dropbox's Filesystem
+                        team. I work on the distributed systems that store and sync millions of users'
+                        files every day. I enjoy building systems and websites that solve problems for
+                        people all around the world.
+                    </p>
+                </div>
+                <div class="profile_container">
+                    <img id="profile_pic" src="/images/profile_half_size.jpg" />
+                </div>
             </div>
             <div class="tile">
                 <h3>Links</h3>

@@ -76,3 +76,22 @@ div.tile-header {
     margin: 0 .5em .5em 0;
     float: left;
 }
+
+div#about {
+    display: flex;
+    align-items: center;
+}
+
+div.profile_container img#profile_pic {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    object-position: 39% 0;
+    filter: brightness(125%);
+}
+
+@media screen and (max-width: 640px) {
+    div#about {
+        flex-wrap: wrap;
+    }
+}
