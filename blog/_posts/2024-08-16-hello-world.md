@@ -14,3 +14,10 @@ So in this post, I'll try to write down what I did to make this.
 How that happened will have to be a different post.
 2. I followed some random [Github repo](https://github.com/chadbaldwin/simple-blog-bootstrap) I found that was relatively recent (3 years old) and also based on Github pages.
 3. I blindly copied the `_config.yml` file from that repo, and made the kind of structure I wanted for the blog.
+4. I realized I needed some of the other directories if I wanted to actually have layouts for the posts. 
+For now, I'm not trying to depend on any other libraries or anything.
+
+
+## Debugging
+- The first time I pushed, my config and post/ files were all in /blog in the repo, this 404'd when I tried to visit it. The example I followed didn't have one, so there must be some other magic going on. Oh, it turns out I just needed to be patient - it totally worked!
+- Next I saw that the index.md page wasn't showing any posts to navigate to. I wasn't using the right filename format (date and name, hyphen-separated), so now it might work. 
