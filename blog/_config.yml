@@ -1,0 +1,28 @@
+title: "davidw's blog"
+author: "David Wetterau"
+description: "David Wetterau's blog about life and tech"
+
+email: "david.wetterau@gmail.com"
+twitter_username: "dwetterau"
+github_username: "dwetterau"
+linkedin_username: "dwetterau"
+
+theme: "minima"
+
+kramdown:
+        syntax_highligher_opts:
+                disable: false
+
+plugins:
+        - jekyll-feed
+        - jekyll-sitemap
+
+titles_from_headings:
+        strip_title: true
+        collections: true
+
+titles_from_headings:
+        - scope:
+                path: ""
+                type: post
+
