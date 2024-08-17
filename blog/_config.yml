@@ -9,20 +9,20 @@ linkedin_username: "dwetterau"
 
 theme: "minima"
 
-kramdown:
-        syntax_highligher_opts:
-                disable: false
+rss: rss
 
 plugins:
-        - jekyll-feed
-        - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-sitemap
 
 titles_from_headings:
-        strip_title: true
-        collections: true
+  strip_title: true
+  collections: true
 
-titles_from_headings:
-        - scope:
-                path: ""
-                type: post
+defaults:
+  - scope:
+      path: ""
+      type: post
+    values:
+      tags: Other
 
