@@ -1,3 +1,7 @@
+---
+layout: post-with-comments
+---
+
 # hello world
 
 I used to imagine that when I started a blog, I would resist the urge to make the first post about starting a blog.

@@ -7,8 +7,8 @@
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="hello world" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="I used to imagine that when I ever started a blog, I would resist the urge to make the first post about starting a blog. Alas, I fell into the same trap." />
-<meta property="og:description" content="I used to imagine that when I ever started a blog, I would resist the urge to make the first post about starting a blog. Alas, I fell into the same trap." />
+<meta name="description" content="I used to imagine that when I started a blog, I would resist the urge to make the first post about starting a blog. Alas, I fell into the same trap." />
+<meta property="og:description" content="I used to imagine that when I started a blog, I would resist the urge to make the first post about starting a blog. Alas, I fell into the same trap." />
 <link rel="canonical" href="http://localhost:4000/2024/08/16/hello-world.html" />
 <meta property="og:url" content="http://localhost:4000/2024/08/16/hello-world.html" />
 <meta property="og:site_name" content="davidw’s blog" />
@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="hello world" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-08-16T00:00:00-04:00","datePublished":"2024-08-16T00:00:00-04:00","description":"I used to imagine that when I ever started a blog, I would resist the urge to make the first post about starting a blog. Alas, I fell into the same trap.","headline":"hello world","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2024/08/16/hello-world.html"},"url":"http://localhost:4000/2024/08/16/hello-world.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-08-16T00:00:00-04:00","datePublished":"2024-08-16T00:00:00-04:00","description":"I used to imagine that when I started a blog, I would resist the urge to make the first post about starting a blog. Alas, I fell into the same trap.","headline":"hello world","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2024/08/16/hello-world.html"},"url":"http://localhost:4000/2024/08/16/hello-world.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="davidw&apos;s blog" /></head>
 <body><header class="site-header" role="banner">
@@ -47,37 +47,50 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>I used to imagine that when I ever started a blog, I would resist the urge to make the first post about starting a blog.
+    <div>
+  <p>I used to imagine that when I started a blog, I would resist the urge to make the first post about starting a blog.
 Alas, I fell into the same trap.</p>
 
-<p>In my defence, the issue is that setting up a blog is a mess, even in 2024. 
+<p>In my defence, the issue is that setting up a blog is a complicated mess, even in 2024.
 In order to see if it’s working at all, I need to make sure that I can actually make posts and view them.</p>
 
 <p>So in this post, I’ll try to write down what I did to make this.</p>
 
 <h2 id="steps">Steps</h2>
+
 <ol>
-  <li>I already had a website, running at <a href="/">https://davidw.tech</a>, and hosted on github pages. 
-How that happened will have to be a different post.</li>
-  <li>I followed some random <a href="https://github.com/chadbaldwin/simple-blog-bootstrap">Github repo</a> I found that was relatively recent (3 years old) and also based on Github pages.</li>
-  <li>I blindly copied the <code class="language-plaintext highlighter-rouge">_config.yml</code> file from that repo, and made the kind of structure I wanted for the blog.</li>
-  <li>I realized I needed some of the other directories if I wanted to actually have layouts for the posts. 
-For now, I’m not trying to depend on any other libraries or anything.</li>
-  <li>Most things worked after this, but I wasn’t getting any custom styles or things like the sitemap plugin to load. I’ll have to try something else.</li>
-  <li>I decided to follow <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll">Github’s own  guide</a> on how to do this, which I originally got to by trying to figure out how to test this locally.</li>
-  <li>From here, I had to merge in the posts and other changes I was trying to use from the other guide.</li>
-  <li>It turned out I didn’t really want any of those other changes anyway.</li>
+  <li>I already had a website, running at <a href="/">https://davidw.tech</a>, and hosted on github pages.
+How that happened will have to be a different post, it’s been around for a long time.</li>
+  <li>I followed some random <a href="https://github.com/chadbaldwin/simple-blog-bootstrap">Github repo</a> I found that was relatively recent (3 years old) and also based on Github pages.
+Copying the actual files and settings from this turned out to be a total mistake.
+I realized this when I found and followed <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll">Github’s own guide</a> on how to do this, which I originally got to by trying to figure out how to test this locally.</li>
+  <li>Now I have a functioning blog, but it also replaced every other part of my old website, since Jekyll didn’t seem happy to build in a subdirectory on Github Pages (where this is hosted).</li>
   <li>I’ll figure out how to customize more parts of this later, but for now I have it working!</li>
 </ol>
 
-<h2 id="debugging">Debugging</h2>
+<p>This process took at least 3 days of off-and-on tinkering. Now that I have it working, I have a lot of work to do to replace all of the links and past project pages that I used to have.</p>
+
+<h2 id="tips">Tips</h2>
+
 <ul>
-  <li>The first time I pushed, my config and post/ files were all in /blog in the repo, this 404’d when I tried to visit it. The example I followed didn’t have one, so there must be some other magic going on. Oh, it turns out I just needed to be patient - it totally worked!</li>
-  <li>Next I saw that the index.md page wasn’t showing any posts to navigate to. I wasn’t using the right filename format (date and name, hyphen-separated), so now it might work.</li>
-  <li>Well, the styling of things is definitely not how I want it, but I figured out how to access the posts - and they’re working! Why is the site-map not working though?</li>
-  <li>Starting from Jekyll’s output, more things around the page navigation are working locally - and so is the list of page.
-I’ll try to use the same title plugin though, this was needed to get jekyll to not show the title multiple times on the index page.</li>
+  <li>Follow Github’s guide for setting up a repo and using Jekyll in it.
+I found that I needed to have a single <code class="language-plaintext highlighter-rouge">_config.yml</code> file that everything in the repo used, otherwise there were build failures in the Github action that tried to build the pages.</li>
+  <li>I highly recommend figuring out how to <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll">get this all working locally</a> too, to avoid having to push a bunch of broken configurations and waiting ~45 seconds for Github to slowly build them.</li>
+  <li>Copy things from the up-to-date sources.
+For me this meant the Github guides, but also for customizing the CSS on the about page, I made sure I was referencing and forking the layouts from the theme’s repo.
+<a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll">Github’s guide on customizing the themes</a> is helpful to know where to find these theme repos.</li>
 </ul>
+
+
+<script src="https://utteranc.es/client.js"
+        repo="dwetterau/dwetterau.github.io"
+        issue-term="pathname"
+        label="comments"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+</div>
 
   </div><a class="u-url" href="/2024/08/16/hello-world.html" hidden></a>
 </article>
