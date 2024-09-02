@@ -9,17 +9,27 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="I used to imagine that when I started a blog, I would resist the urge to make the first post about starting a blog. Alas, I fell into the same trap." />
 <meta property="og:description" content="I used to imagine that when I started a blog, I would resist the urge to make the first post about starting a blog. Alas, I fell into the same trap." />
-<link rel="canonical" href="http://localhost:4000/2024/08/16/hello-world.html" />
-<meta property="og:url" content="http://localhost:4000/2024/08/16/hello-world.html" />
+<link rel="canonical" href="https://davidw.tech/2024/08/16/hello-world.html" />
+<meta property="og:url" content="https://davidw.tech/2024/08/16/hello-world.html" />
 <meta property="og:site_name" content="davidw’s blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-08-16T00:00:00-04:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="hello world" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-08-16T00:00:00-04:00","datePublished":"2024-08-16T00:00:00-04:00","description":"I used to imagine that when I started a blog, I would resist the urge to make the first post about starting a blog. Alas, I fell into the same trap.","headline":"hello world","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2024/08/16/hello-world.html"},"url":"http://localhost:4000/2024/08/16/hello-world.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-08-16T00:00:00-04:00","datePublished":"2024-08-16T00:00:00-04:00","description":"I used to imagine that when I started a blog, I would resist the urge to make the first post about starting a blog. Alas, I fell into the same trap.","headline":"hello world","mainEntityOfPage":{"@type":"WebPage","@id":"https://davidw.tech/2024/08/16/hello-world.html"},"url":"https://davidw.tech/2024/08/16/hello-world.html"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="davidw&apos;s blog" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://davidw.tech/feed.xml" title="davidw&apos;s blog" /><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-83MQGMDLXV"></script>
+<script>
+  window['ga-disable-G-83MQGMDLXV'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-83MQGMDLXV');
+</script>
+</head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">davidw&#39;s blog</a><nav class="site-nav">
@@ -56,7 +66,7 @@ In order to see if it’s working at all, I need to make sure that I can actuall
 
 <p>So in this post, I’ll try to write down what I did to make this.</p>
 
-<h2 id="steps">Steps</h2>
+<h2 id="setup-steps">Setup steps</h2>
 
 <ol>
   <li>I already had a website, running at <a href="/">https://davidw.tech</a>, and hosted on github pages.
@@ -66,6 +76,9 @@ Copying the actual files and settings from this turned out to be a total mistake
 I realized this when I found and followed <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll">Github’s own guide</a> on how to do this, which I originally got to by trying to figure out how to test this locally.</li>
   <li>Now I have a functioning blog, but it also replaced every other part of my old website, since Jekyll didn’t seem happy to build in a subdirectory on Github Pages (where this is hosted).</li>
   <li>I’ll figure out how to customize more parts of this later, but for now I have it working!</li>
+  <li>I want comments natively on the post, since I don’t expect to find my posts anywhere else on the web.
+To do this, I enabled comments via <a href="https://utteranc.es/">utterances</a> which creates Github issues for each post, and displays the comments on those issues inline with the posts.
+Clever!</li>
 </ol>
 
 <p>This process took at least 3 days of off-and-on tinkering. Now that I have it working, I have a lot of work to do to replace all of the links and past project pages that I used to have.</p>
@@ -79,6 +92,13 @@ I found that I needed to have a single <code class="language-plaintext highlight
   <li>Copy things from the up-to-date sources.
 For me this meant the Github guides, but also for customizing the CSS on the about page, I made sure I was referencing and forking the layouts from the theme’s repo.
 <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll">Github’s guide on customizing the themes</a> is helpful to know where to find these theme repos.</li>
+</ul>
+
+<h2 id="future-todos">Future TODOs</h2>
+
+<ul>
+  <li>I want a system of tagging, so that I can cleanly separate posts about work topics vs. personal ones</li>
+  <li>I don’t know how this theme’s navigation support is going to work yet - but I’ll find out as I post more!</li>
 </ul>
 
 

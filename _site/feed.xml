@@ -1,4 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-18T14:31:12-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">davidw’s blog</title><subtitle>David Wetterau&apos;s website and blog.</subtitle><entry><title type="html">hello world</title><link href="http://localhost:4000/2024/08/16/hello-world.html" rel="alternate" type="text/html" title="hello world" /><published>2024-08-16T00:00:00-04:00</published><updated>2024-08-16T00:00:00-04:00</updated><id>http://localhost:4000/2024/08/16/hello-world</id><content type="html" xml:base="http://localhost:4000/2024/08/16/hello-world.html"><![CDATA[<p>I used to imagine that when I started a blog, I would resist the urge to make the first post about starting a blog.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://davidw.tech/feed.xml" rel="self" type="application/atom+xml" /><link href="https://davidw.tech/" rel="alternate" type="text/html" /><updated>2024-09-02T17:08:52-04:00</updated><id>https://davidw.tech/feed.xml</id><title type="html">davidw’s blog</title><subtitle>David Wetterau&apos;s website and blog.</subtitle><entry><title type="html">Send pulls not problems</title><link href="https://davidw.tech/2024/08/31/send-pulls-not-problems.html" rel="alternate" type="text/html" title="Send pulls not problems" /><published>2024-08-31T00:00:00-04:00</published><updated>2024-08-31T00:00:00-04:00</updated><id>https://davidw.tech/2024/08/31/send-pulls-not-problems</id><content type="html" xml:base="https://davidw.tech/2024/08/31/send-pulls-not-problems.html"><![CDATA[<p>I can’t take credit for the origin of this phrase, but I have used it many times. 
+For anyone not familiar with Github’s terminology a “pull” request is (in non-technical terms) a proposed change to some code that a reviewer can choose to accept, request changes to, or reject entirely.
+A restating of this phrase would be something like: “don’t just complain about something, try to solve it”, but that’s not nearly as catchy.</p>
+
+<h2 id="how-to-apply-this-phrase">How to apply this phrase</h2>
+
+<p>If you’re working at a technology company in 2024, you probably have a large shared codebase (e.g. a monorepo).
+One giant advantage of this arrangement is that you have the power to go see how anything works, and you can suggest changes and improvements to almost anything.</p>
+
+<p>If there is a small quirk in some tool that you’re using, or something you want to tweak in a user interface, try giving yourself a time-boxed amount of time (probably no more than 15 minutes) to go find it in the codebase and fix it.</p>
+
+<p>If you manage to fix it, send the team that owns the feature a pull request about it! 
+The team might not accept it, so don’t get too attached to these throw-it-over-the-wall fixes, but they will certainly follow up with you about it if you’ve taken the time to try to fix it yourself.</p>
+
+<p>After your 15 minutes is up, if you did not successfully fix the issue but still think it’s important, <em>then</em> you can go tell the responsible team  your complaint. 
+Since you’ve dug in, you’ll have more empathy with the team about why it might not be a simple fix to perform.
+It might also be useful to share what you tried to do to let them build off of your work.</p>
+
+<h2 id="gotchas">Gotchas</h2>
+
+<p>You must take care to not overuse this expression, or use it with the wrong tone; when used incorrectly, you might sound like a defensive jerk!
+I strongly prefer to use this expression as a suggestion when the complaint is about something I’m not directly responsible for, since if I am responsible for it, it can easily be interpretted as not being receptive of feedback.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[I can’t take credit for the origin of this phrase, but I have used it many times. For anyone not familiar with Github’s terminology a “pull” request is (in non-technical terms) a proposed change to some code that a reviewer can choose to accept, request changes to, or reject entirely. A restating of this phrase would be something like: “don’t just complain about something, try to solve it”, but that’s not nearly as catchy.]]></summary></entry><entry><title type="html">Getting value from meetings</title><link href="https://davidw.tech/2024/08/24/meetings.html" rel="alternate" type="text/html" title="Getting value from meetings" /><published>2024-08-24T00:00:00-04:00</published><updated>2024-08-24T00:00:00-04:00</updated><id>https://davidw.tech/2024/08/24/meetings</id><content type="html" xml:base="https://davidw.tech/2024/08/24/meetings.html"><![CDATA[<p>Many engineers, myself included, struggle with meetings.
+Meetings occupy a significant amount of our working lives, and often get a reputation of being a waste of time, or something that impacts productivity in a negative way.</p>
+
+<p>Hybrid working environments are here to stay and by their nature require more meetings.
+This means the oldest meeting advice of “just cancel them” doesn’t work in practice. 
+Instead, here are a few tips that I have found useful over the years in order to get the most out of meetings.</p>
+
+<h3 id="watch-out-for-triangles-of-communication">Watch out for triangles of communication</h3>
+
+<p>One-on-one meetings are common on teams to check-in with your coworkers, give and receive mentorship and advice, and provide feedback. 
+Often, people attempt to restrict these meetings from discussing tactical work, since that sort of discussion can happen more openly, and will always grow to fill the meeting time (instead of allowing space for more important discussions like feedback).
+I have rarely seen a blanket ban on tactical work in practice, so instead I try to watch out for something else: situations where tactical discussions are going around in a triangle.</p>
+
+<p>Imagine you are on a project team with 2 other people (3 total).
+If you meet to talk with one person on the project, and you discuss the project, then later on you (or they) will also have to tell the other team member.
+So far this is not ideal (it’s like a game of telephone), but the real problem happens when the third person has feedback or information that they need to tell you! 
+Now the information has gone around in a triangle, and will probably keep going around.
+If this information transfer is happening in one-on-one meetings, it’s especially slow, since those meetings don’t happen every day.</p>
+
+<p>If I see this happening, I take it as a sign that a focused sync meeting (at some cadence) is needed instead. 
+There, tactical information can be shared with everyone at once, and you can collapse the triangle into a point.</p>
+
+<h3 id="take-notes">Take notes</h3>
+
+<p>A common problem with meetings is that they end and people go home or log off and then people forget what was discussed. 
+This was arguably even more of a problem when most meetings took place face-to-face, but it still happens in virtual meetings.</p>
+
+<p>Taking notes is an obvious solution to do this, and instead of trying to remember everything at the end, I highly recommend taking them, publicly, as the meeting is going along (e.g. while screen-sharing the notes).
+If someone sees you mis-type or misunderstand something, they can correct it on the spot instead of when they review the notes later (which they might not do).
+Another benefit of this approach is that it can keep the meeting moving forward, since if a conversation is going off-topic, and you stop taking notes about it. 
+This might signal to the speaker that it’s time to get back to the agenda.</p>
+
+<h3 id="get-your-most-important-question-answered">Get your most important question answered</h3>
+
+<p>I’ve commonly heard the meeting advice of “make sure every meeting has an agenda”, and have found it somewhat useful, but often overkill.
+Meetings often can (and should!) be short, and don’t need a lengthy agenda.
+What I try to do instead is make sure that I know the number one question I want to get answered in a meeting before I go.</p>
+
+<p>If you identify a key question or decision that you need to make to unblock yourself, that’s often all that’s needed to make a meeting productive. 
+You can even put your question in the notes ahead of time to make sure you don’t forget, and maybe people would call this simple format an “agenda” of some kind.</p>
+
+<p>At the latest, halfway through the meeting, I try to make sure that my question has at least been asked. 
+It sometimes will require another meeting to get to the final answer, and that’s okay.
+The key is to at least make sure the question is being worked on, which guarantees that from your perspective, the meeting was not a waste of time.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Many engineers, myself included, struggle with meetings. Meetings occupy a significant amount of our working lives, and often get a reputation of being a waste of time, or something that impacts productivity in a negative way. Hybrid working environments are here to stay and by their nature require more meetings. This means the oldest meeting advice of “just cancel them” doesn’t work in practice. Instead, here are a few tips that I have found useful over the years in order to get the most out of meetings.]]></summary></entry><entry><title type="html">hello world</title><link href="https://davidw.tech/2024/08/16/hello-world.html" rel="alternate" type="text/html" title="hello world" /><published>2024-08-16T00:00:00-04:00</published><updated>2024-08-16T00:00:00-04:00</updated><id>https://davidw.tech/2024/08/16/hello-world</id><content type="html" xml:base="https://davidw.tech/2024/08/16/hello-world.html"><![CDATA[<p>I used to imagine that when I started a blog, I would resist the urge to make the first post about starting a blog.
 Alas, I fell into the same trap.</p>
 
 <p>In my defence, the issue is that setting up a blog is a complicated mess, even in 2024.
@@ -6,7 +70,7 @@ In order to see if it’s working at all, I need to make sure that I can actuall
 
 <p>So in this post, I’ll try to write down what I did to make this.</p>
 
-<h2 id="steps">Steps</h2>
+<h2 id="setup-steps">Setup steps</h2>
 
 <ol>
   <li>I already had a website, running at <a href="/">https://davidw.tech</a>, and hosted on github pages.
@@ -16,6 +80,9 @@ Copying the actual files and settings from this turned out to be a total mistake
 I realized this when I found and followed <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll">Github’s own guide</a> on how to do this, which I originally got to by trying to figure out how to test this locally.</li>
   <li>Now I have a functioning blog, but it also replaced every other part of my old website, since Jekyll didn’t seem happy to build in a subdirectory on Github Pages (where this is hosted).</li>
   <li>I’ll figure out how to customize more parts of this later, but for now I have it working!</li>
+  <li>I want comments natively on the post, since I don’t expect to find my posts anywhere else on the web.
+To do this, I enabled comments via <a href="https://utteranc.es/">utterances</a> which creates Github issues for each post, and displays the comments on those issues inline with the posts.
+Clever!</li>
 </ol>
 
 <p>This process took at least 3 days of off-and-on tinkering. Now that I have it working, I have a lot of work to do to replace all of the links and past project pages that I used to have.</p>
@@ -29,4 +96,11 @@ I found that I needed to have a single <code class="language-plaintext highlight
   <li>Copy things from the up-to-date sources.
 For me this meant the Github guides, but also for customizing the CSS on the about page, I made sure I was referencing and forking the layouts from the theme’s repo.
 <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll">Github’s guide on customizing the themes</a> is helpful to know where to find these theme repos.</li>
+</ul>
+
+<h2 id="future-todos">Future TODOs</h2>
+
+<ul>
+  <li>I want a system of tagging, so that I can cleanly separate posts about work topics vs. personal ones</li>
+  <li>I don’t know how this theme’s navigation support is going to work yet - but I’ll find out as I post more!</li>
 </ul>]]></content><author><name></name></author><summary type="html"><![CDATA[I used to imagine that when I started a blog, I would resist the urge to make the first post about starting a blog. Alas, I fell into the same trap.]]></summary></entry></feed>
