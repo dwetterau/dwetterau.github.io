@@ -4,7 +4,7 @@ layout: post-with-comments
 # Who fixes the bug? 
 
 This is the second post in a series about code reviews. 
-Check out the [first one](2024/09/22/review-more-code) to hear about why I think code reviews are so valuable to do. 
+Check out the [first one](/2024/09/22/review-more-code) to hear about why I think code reviews are so valuable to do. 
 In this post, I want to explore the question of who ultimately is responsible for fixing the bugs and issues that a code review misses.
 We'll start with two competing philospohies I've encountered on the question, and we'll end with a healthy blend of both that I've found to be most productive.
 
