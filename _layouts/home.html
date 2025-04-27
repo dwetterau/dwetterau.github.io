@@ -3,9 +3,17 @@ layout: base
 ---
 
 <div class="home">
-  {{ content }} {% if site.paginate %} {% assign posts = paginator.posts %} {%
-  else %} {% assign posts = site.posts %} {% endif %} {%- if posts.size > 0 -%}
-  {%- if page.list_title -%}
+  <h1>Welcome!</h1>
+  <div class="home-header-container">
+    <div class="profile-container" style="width: 128px">
+      <img id="profile-pic" src="/images/profile_2024.jpg" />
+    </div>
+    <div class="home-content">{{ content }}</div>
+  </div>
+
+  {% if site.paginate %} {% assign posts = paginator.posts %} {% else %} {%
+  assign posts = site.posts %} {% endif %} {%- if posts.size > 0 -%} {%- if
+  page.list_title -%}
   <h2 class="post-list-heading">{{ page.list_title }}</h2>
   {%- endif -%}
   <ul class="post-list">

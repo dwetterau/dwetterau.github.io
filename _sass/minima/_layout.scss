@@ -207,6 +207,21 @@
   @include relative-font-size(2);
 }
 
+.home-header-container {
+  display: flex;
+  gap: 1em;
+}
+
+div.profile-container img#profile-pic {
+  width: 128px;
+  min-width: 128px;
+  height: 128px;
+  object-fit: cover;
+  object-position: 39% 0;
+  border-radius: 64px;
+  filter: brightness(105%);
+}
+
 .post-list-heading {
   @include relative-font-size(1.75);
   margin-top: 1em;
