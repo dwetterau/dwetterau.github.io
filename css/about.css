@@ -1,7 +1,8 @@
 div.profile-container img#profile-pic {
-    width: 128px;
-    height: 128px;
-    object-fit: cover;
-    object-position: 39% 0;
-    filter: brightness(125%);
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  object-position: 39% 0;
+  border-radius: 64px;
+  filter: brightness(105%);
 }
