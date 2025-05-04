@@ -58,7 +58,7 @@ The results have generally been mixed when using LLMs - it's difficult to prompt
 I also would prefer that my entries were transcribed as literally as possible, in case I am actually writing something that has a non-standard spelling or name.
 This weekend, I tried searching again and found a few "HTR" models that seemed both recent and promising.
 
-I have a Windows desktop that I predominently use to play games, so I justified buying a Nvidia 3080 ti card a few years ago both for the games but also because I thought machine learning was something I might one day want to play with.
+I have a Windows desktop that I predominantly use to play games, so I justified buying a Nvidia 3080 ti card a few years ago both for the games but also because I thought machine learning was something I might one day want to play with.
 After a few hours of struggling to get CUDA working inside of Ubuntu inside of WSL2 inside of Windows 11 (this setup is a story for another day), I was ready to try out some models.
 
 I first tried [TrOCR](https://huggingface.co/microsoft/trocr-base-handwritten) because it mentioned it was fine-tuned on a handwriting database that sounded relevant.
@@ -80,7 +80,7 @@ This model does a good job of also including the line breaks, which should make 
 
 In the small handful of early entries I looked at, it was only getting 1-2 words wrong per entry.
 As I work my way through this process, I might report back with some accuracy numbers.
-It seemed like the quality was already high enough to start interpretting the results with LLMs, which pushed me to go ahead and run this on all the scans I have so far.
+It seemed like the quality was already high enough to start interpreting the results with LLMs, which pushed me to go ahead and run this on all the scans I have so far.
 
 ### Wrapping up
 

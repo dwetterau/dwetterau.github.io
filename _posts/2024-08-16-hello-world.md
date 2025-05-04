@@ -7,7 +7,7 @@ layout: post-with-comments
 I used to imagine that when I started a blog, I would resist the urge to make the first post about starting a blog.
 Alas, I fell into the same trap.
 
-In my defence, the issue is that setting up a blog is a complicated mess, even in 2024.
+In my defense, the issue is that setting up a blog is a complicated mess, even in 2024.
 In order to see if it's working at all, I need to make sure that I can actually make posts and view them.
 
 So in this post, I'll try to write down what I did to make this.
