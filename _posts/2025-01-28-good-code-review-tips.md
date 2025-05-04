@@ -22,8 +22,8 @@ Keep in mind that every round of code review adds substantial delay to the proce
 For this to work well, you have to have a good system for making sure that the changes are ultimately performed. 
 This can look like a process for follow-ups, with TODO comments pointing to ticket numbers, or it often happens organically on teams with high levels of trust (where individuals manage their follow-ups themselves).
 
-There are a few exceptions to this rule though:
-1. Block code that is unsafe. If you know that the code is going to cause an incident if its deployed, don't let it proceed. Require the author to put it safely behind some gating mechanism if they want to merge it incrementally.
+There are a few exceptions to this rule:
+1. Block code that is unsafe. If you know that the code is going to cause an incident if it's deployed, don't let it proceed. Require the author to put it safely behind some gating mechanism if they want to merge it incrementally.
 1. When someone is ramping up, it serves them better to get the feedback and pointers to resources like style guides quickly, rather than burden themselves with a long list of TODOs.
 
 ### Remove debates around style
@@ -31,7 +31,7 @@ There are a few exceptions to this rule though:
 Use tools like prettier, gofmt, etc. to automate the process of code formatting.
 Computers are really good at formatting code, and having consistently formatted code makes so many things better (e.g. code diffing).
 
-If I do comment on someone's code style, I like to set a rule for myself that it must contain a link to a published and shared style guide. 
+If I do comment on someone's code style, I force myself to include a link to a published and shared style guide. 
 Everyone forgets the style sometimes, and it's easy for debates to spiral out of control if they aren't based in agreed-upon standards.
 
 ### Make sure the next steps for every comment are clear
@@ -40,5 +40,5 @@ If you add a comment, make sure the author knows exactly what the next steps the
 The author shouldn't need to read your mind to know what to do next.
 
 Small "nits" should by convention not require further conversation, and the author can decide to ignore them.
-If you want to discuss something more before they make changes, put it in the comment - otherwise they might dive in and waste their precious cycles doing something other than what you had in mind.
+If you want to discuss something more before they make changes, put it in the comment. Otherwise, they might dive in and waste their precious cycles doing something other than what you had in mind.
 
