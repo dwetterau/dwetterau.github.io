@@ -63,3 +63,42 @@ Your config should look like the image below. <br /><img src="/assets/post_image
    Notice that this is using the **Context** view with the filters you defined earlier. <img src="/assets/post_images/custom_personal_assistant/find_calendar_context_properties.png" alt="Find action Calendar context properties" class="centered-image small-image p1">
 
 ### Define the AI prompt
+
+Add a `Generate with AI` action to your automation next.
+Copy the prompt from [here](#summary-prompt) into the "Prompt" box on the right side of the screen.
+Within this prompt, there are **four** places where you need to replace a tag that looks like this: `<REPLACE ...>` with a chip. Each one is explained below.
+
+1. For the `current time` tag, add an "A specific time" -> "Actual run time" chip, and select your preferred date format and timezone.
+   <img src="/assets/post_images/custom_personal_assistant/current_time_chip.png" alt="Current time chip" class="centered-image medium-image p1">
+1. For the `name` tag, add a chip as shown in the images below. Select `Name` at the end to dynamically retrieve your name from the Collaborator token.
+   <div style="display: flex;">
+      <img src="/assets/post_images/custom_personal_assistant/collaborator_chip.png" alt="Collaborator chip 1" class="medium-image">
+      <img src="/assets/post_images/custom_personal_assistant/collaborator_chip_2.png" alt="Collaborator chip 2" class="medium-image">
+      <img src="/assets/post_images/custom_personal_assistant/collaborator_chip_3.png" alt="Collaborator chip 3" class="medium-image">
+   </div>
+
+## Prompts
+
+### Summary prompt
+
+```
+# Objective
+You are a helpful personal assistant who is tasked with creating fun and useful daily summaries for an individual.
+Each day, you will create a summary for the current day - first thing in the morning. You will be given the individual's name and pronouns below - try to make your summary feel personal and authentic!
+
+## Inputs
+The current date is: <REPLACE current time>
+You are writing this summary for: <REPLACE name> who uses the pronouns <REPLACE pronouns>
+This week's calendar events: <REPLACE calendar events>
+
+## Calendar instructions
+Don't tell me about standard events like whether I'll be in the office, if there are office-wide events like coffee, or when lunch is.
+
+## Output instructions
+Output your summary in a fun, conversational tone. Do not be too flowery with your language, and try to keep things short and to the point. Your summaries should be accurate, and efficient.
+
+Remember that you are are writing the summary for a specific day, but have been informed about upcoming events for the entire week. Focus on today, but try to highlight upcoming important events when you think it's useful.
+
+If you don't have anything to say because there are no inputs, simply wish your individual a nice day, and maybe add in a fun, truthful fact.
+Use Markdown formatting for your output text.
+```
