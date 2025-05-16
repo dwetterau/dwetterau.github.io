@@ -71,11 +71,25 @@ Within this prompt, there are **four** places where you need to replace a tag th
 1. For the `current time` tag, add an "A specific time" -> "Actual run time" chip, and select your preferred date format and timezone.
    <img src="/assets/post_images/custom_personal_assistant/current_time_chip.png" alt="Current time chip" class="centered-image medium-image p1">
 1. For the `name` tag, add a chip as shown in the images below. Select `Name` at the end to dynamically retrieve your name from the Collaborator token.
-   <div style="display: flex;">
-      <img src="/assets/post_images/custom_personal_assistant/collaborator_chip.png" alt="Collaborator chip 1" class="medium-image">
-      <img src="/assets/post_images/custom_personal_assistant/collaborator_chip_2.png" alt="Collaborator chip 2" class="medium-image">
-      <img src="/assets/post_images/custom_personal_assistant/collaborator_chip_3.png" alt="Collaborator chip 3" class="medium-image">
+   <div style="height: 380px" class="carousel p1">
+      <img src="/assets/post_images/custom_personal_assistant/collaborator_chip.png" alt="Collaborator chip 1" class="medium-image slide9s">
+      <img src="/assets/post_images/custom_personal_assistant/collaborator_chip_2.png" alt="Collaborator chip 2" class="medium-image slide9s">
+      <img src="/assets/post_images/custom_personal_assistant/collaborator_chip_3.png" alt="Collaborator chip 3" class="medium-image slide9s">
    </div>
+1. For the `pronouns` tag, add a chip the same exact way, however select the `Pronouns` field value (instead of `Collaborator`) instead.
+1. For `calendar events`, select the proper Find records step, then display as a _list_, and then add a chip like this:
+   <div style="height: 376px" class="carousel p1">
+      <img src="/assets/post_images/custom_personal_assistant/calendar_events_chip_1.png" alt="Calendar events chip 1" class="medium-image slide6s">
+      <img src="/assets/post_images/custom_personal_assistant/calendar_events_chip_2.png" alt="Calendar events chip 2" class="medium-image slide6s">
+   </div>
+   <center><i>Only select a few fields here. Make sure "Use field timezones if available" at the bottom is checked.</i></center>
+1. Change your model to something more powerful such as "Claude Sonnet 3.7" or "GPT-4.1".
+1. Change your Randomness to "Medium"
+
+At the end of all of these steps your action should look something like this:
+<img src="/assets/post_images/custom_personal_assistant/summary_prompt_end.png" alt="Summary prompt preview" class="centered-image small-image p1">
+
+### Send some emails
 
 ## Prompts
 

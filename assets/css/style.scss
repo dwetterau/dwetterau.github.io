@@ -24,3 +24,90 @@
   width: 50%;
   max-width: 400px;
 }
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* match the widest image */
+  height: 300px; /* match the image height */
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide9s {
+  position: absolute;
+  max-height: 100%;
+  width: auto;
+  opacity: 0;
+  animation: fade9s 9s infinite;
+  transition: opacity 1s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+}
+
+.slide6s {
+  position: absolute;
+  max-height: 100%;
+  width: auto;
+  opacity: 0;
+  animation: fade6s 6s infinite;
+  transition: opacity 1s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+}
+
+.slide9s:nth-child(1) {
+  animation-delay: 0s;
+}
+.slide9s:nth-child(2) {
+  animation-delay: 3s;
+}
+.slide9s:nth-child(3) {
+  animation-delay: 6s;
+}
+
+.slide6s:nth-child(1) {
+  animation-delay: 0s;
+}
+.slide6s:nth-child(2) {
+  animation-delay: 3s;
+}
+
+@keyframes fade9s {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade6s {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
