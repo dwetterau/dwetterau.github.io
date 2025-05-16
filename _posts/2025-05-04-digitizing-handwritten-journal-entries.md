@@ -69,7 +69,7 @@ Here are the [~30 lines of code](https://gist.github.com/dwetterau/2d02857419293
 On my setup, it seems to need around 7GB of VRAM to run - and takes a minute and a half to load into memory.
 Inference for each image took around 4 seconds, and then I spent another 1.5 seconds or so uploading the image and inferred text to Airtable.
 
-![Image](/assets/css/post_images/processing_journal_entries.png)
+![Image](/assets/post_images/processing_journal_entries.png)
 
 <center><i>The GPU utilization as it processed each image (and subsequently uploaded the image + result).</i></center>
 <br />
