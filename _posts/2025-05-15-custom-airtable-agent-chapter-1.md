@@ -30,9 +30,7 @@ This will contain a summary of your Google Calendar, the weather, and any other 
 <center><i>We will use this table in Automations and AI prompts to personalize your experience.</i></center>
 <br />
 
-## 📅 Import Google Calendar events
-
-### Create a Google calendar sync table
+### 📅 Create a Google calendar sync table
 
 Follow the ([help center instructions](https://support.airtable.com/docs/airtable-sync-integration-google-calendar)) if you need some help with this.
 Your config should look like the image below. <br /><img src="/assets/post_images/custom_personal_assistant/calendar_sync_config.png" alt="Calendar sync config" class="centered-image medium-image p1">
@@ -41,7 +39,7 @@ Your config should look like the image below. <br /><img src="/assets/post_image
 1. Rename this table to `Calendar`
 1. [Optional] You can add additional sync sources to this same table to bring in other calendars. If you do be sure to include the sync source later on when you are filling out AI prompts.
 
-### Creating a "Context" view
+### Create a "Context" view
 
 1.  Create a new view in the synced table called `Context`.
 1.  In the `Context` view, set filters to only include events for the current week, as shown in the screenshot below.
@@ -65,7 +63,7 @@ Your config should look like the image below. <br /><img src="/assets/post_image
 ### Define the AI prompt
 
 Add a `Generate with AI` action to your automation next.
-Copy the prompt from [here](#summary-prompt) into the "Prompt" box on the right side of the screen.
+Copy the prompt from **[here](#summary-prompt)** into the "Prompt" box on the right side of the screen.
 Within this prompt, there are **four** places where you need to replace a tag that looks like this: `<REPLACE ...>` with a chip. Each one is explained below.
 
 1. For the `current time` tag, add an "A specific time" -> "Actual run time" chip, and select your preferred date format and timezone.
@@ -91,7 +89,62 @@ At the end of all of these steps your action should look something like this:
 
 ### Send some emails
 
-## Prompts
+Add one last action to your automation, the `Send email` action that will deliver the AI-generated message to you.
+Feel free to configure this however you'd like. My email looks like the following:
+<img src="/assets/post_images/custom_personal_assistant/summary_email_properties.png" alt="Summary email properties" class="centered-image small-image p1">
+
+1. The chip in the `To` field is configured just like the `name` tag was earlier.
+   This time, select `Email` instead of `Name`.
+1. The chip in the `Subject` field is the same as the `current time` tag from earlier.
+1. The `Message` field should have the Ai action's response, without additional formatting (the AI will format it for us).
+
+With this step done, you should be ready to test and enable your automation! It should look like the below screenshot.
+<img src="/assets/post_images/custom_personal_assistant/summary_automation.png" alt="Summary automation" class="centered-image small-image p1">
+
+🎉 Congratulations, you've now set up an AI personal assistant that will read through your upcoming calendar events and email you a morning brief before you start your day.
+
+## Adding additional data sources
+
+In the previous section, we added Calendar events as a source for the AI to use when constructing your daily summary.
+You can add additional sources the same way, and these sources can be imported from CSVs, [.ics files](https://support.airtable.com/docs/calendar-import-extension), or other syncs.
+
+For each additional data source, you'll follow these steps:
+
+1. Create a new table and import your data.
+1. Create a `Context` view in the table that filters down data to the records relevant for the week.
+1. Add a new `Find Records` step to the summary automation, similar to the `Get the calendar events` one.
+1. Pass in the records to the prompt in the AI action like you did for the `calendar events` tag.
+1. Optionally, add a new section to the prompt explaining the new data source and how to interpret it.
+
+### ⚾ Example: Mets game schedule
+
+I wanted my assistant to know about the Mets baseball team’s schedule.
+
+- Imported a [CSV](https://www.mlb.com/mets/schedule/downloadable-schedule) for the schedule as a new table.
+- Made a `Context` view with filters like this:
+  <img src="/assets/post_images/custom_personal_assistant/mets_table_filters.png" alt="Mets table filters" class="centered-image small-image p1">
+- Added a new `Find records` step with a useful description.
+- Passed the records into the prompt like this:
+  <img src="/assets/post_images/custom_personal_assistant/mets_prompt_changes.png" alt="Mets prompt changes" class="centered-image small-image p1">
+- Added some instructions to the prompt for the AI to use when reasoning about these events:
+
+```
+## Calendar instructions
+... unchanged
+
+## Met's game instructions
+- If there are no Mets games, skip this section.
+- Don't tell me about the radio station, I don't use that
+- Do tell me what TV channel the game is on, and what time it starts.
+- Of course, tell me who the Mets are playing and where.
+```
+
+By following these steps, you can expand your AI personal assistant with additional events and knowledge sources, all without writing any code.
+
+# Next time
+
+In the next post, we'll add "memories" for the AI to consider in addition to just events.
+We'll also set up a way for you to easily send and receive messages directly with the AI.
 
 ### Summary prompt
 
