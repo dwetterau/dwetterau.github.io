@@ -38,4 +38,5 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 
 # Security update requests
-gem "rexml", ">= 3.3.6"
+gem "rexml", ">= 3.3.9"
+gem "nokogiri", ">= 1.18.9"
