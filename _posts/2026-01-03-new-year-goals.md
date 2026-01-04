@@ -10,13 +10,13 @@ If not, it will at least force me to reflect on them if they don't work out.
 
 ## 1: Consume higher-effort media
 
-I want to remove as much time as I can that retroactively feels "wasted" on low-effort content.
+I want to save as much time as I can that retroactively feels "wasted" on low-effort content.
 This type of content can take many forms: 
 - Posts optimized for "engagement" rather than something that would actually make anyone's life better.
-- Videos that are optimized for consuming as much time as possible. Examples for me include low-quality (or high-volume) Podcasts, TV series,  and Youtube channels.
-- News or similar content from lay-people rather than more reputable sources (paid journalists).
+- Videos that are optimized for consuming as much time as possible. Examples for me include low-quality Podcasts, TV series,  and Youtube channels.
+- News or similar content from lay-people rather than more reputable sources.
 
-One theory I have behind each of these is that it has to do with the input and care that goes into the content.
+One (clearly imperfect) theory I have behind each of these is that it has to do with the input and care that goes into the content.
 If someone genuinely cared and put time into crafting the content, there seems to be a higher chance I'll find value when consuming it.
 
 More simply, I want to spend less time on Reddit, YouTube, Netflix, etc. and more time reading books, watching movies, or reading longer-form editorial content (blogs included!) from trusted sources.
@@ -24,8 +24,9 @@ More simply, I want to spend less time on Reddit, YouTube, Netflix, etc. and mor
 ## 2: Build more for fun
 
 I've struggled while working professionally to have substantial side-projects too. 
-Some of this is intended - I build all day at work, and so often I'm tired of building by the time I'm home and need to do something else (usually, this meant playing video games on my Windows PC).
-Now even when I'm tired, my AI agent friends aren't!
+Some of this is intended - I build all day at work, so I'm often tired of building by the time I'm home and need to do something else. 
+Often, that something else meant playing video games, or consuming media as mentioned above.
+Now in 2026 even when I'm tired, my AI agent friends aren't!
 
 To help with this, I've also abandoned WSL on Windows 11 in favor of using Linux directly once again.
 If you're interested, you can follow along with the saga through the [ubuntu-configs repo](https://github.com/dwetterau/ubuntu-configs) I'm using to keep track of my setup and log of things I've needed to configure.
