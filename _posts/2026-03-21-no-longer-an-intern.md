@@ -38,8 +38,8 @@ Also, the models can produce a lot of code for me to review and keep track of in
 
 I treat these agents similar to how I would treat teammates. 
 I keep track of their tasks in an agent-integrated task tracker I built called [Tasky](https://tasky.davidw.tech/).
-I find that I once again spend most of my job reviewing code rather than writing it, which is something [I've been a fan of](/2024/09/22/review-more-code.html) for a long time.
-[Bugbot](https://cursor.com/bugbot) helps with the reviews too, and so do [Cloud-agent based Automations](https://cursor.com/blog/security-agents) that we also run internally.
+I once again spend most of my job reviewing code rather than writing it, which is something [I've been a fan of](/2024/09/22/review-more-code.html) for a long time.
+[Bugbot](https://cursor.com/bugbot) helps with the reviews too, and so do [Cloud-agent based review Automations](https://cursor.com/blog/security-agents).
 
 With all of this, I still find it hard to have more than 3-5 things in flight at once. 
 Any more than that, and I find I'm spending more energy getting PR's reviewed and up-to-date with our fast-moving main branch.
@@ -49,6 +49,7 @@ One or two of those will be my primary project, while the others are usually low
 
 I'm not sure what the next stage of coding models will be, but I am personally hopeful that agents will get better at designing systems rather than just implementing them.
 I hope that we don't fall behind on reigning in the complexity that agents can cause, by investing in ways to ensure they're making our software better, rather than just making more of it.
+
 One way this might manifest is with even more agents running all the time, in the cloud.
 These agents could constantly be testing out features manually or automatically, refactoring code into better abstractions, proposing architectural improvements, and even helping keep the humans up-to-date on what's changing and why.
 
