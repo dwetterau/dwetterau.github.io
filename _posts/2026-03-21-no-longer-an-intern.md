@@ -2,7 +2,7 @@
 layout: post-with-comments
 ---
 
-# Coding agents are no longer an interns
+# Coding agents are no longer interns
 
 Last year, [I wrote about](/2025/06/13/how-I-use-AI-coding-tools-in-2025.html) how LLM coding models at the time were capable of autonomously working at small, simple tasks, like those that you would scope out and assign to an intern.
 Since I wrote that about 9 months ago, both the models and my usage of them have evolved dramatically.
