@@ -57,7 +57,7 @@ There's a Convex cron that triggers to create a new version with the latest data
 That cron pre-renders the page and sends it to a Cloudflare Worker.
 The worker stores it in a Durable Object for the user, which then gets read out by Cloudflare Pages when a user visits [home.davidw.tech](https://home.davidw.tech).
 
-<p><img src="/assets/post_images/homepage_demo.png" alt="Homepage demo" class="centered-image small-image"></p>
+<p><img src="/assets/post_images/homepage_demo.png" alt="Homepage demo" class="centered-image medium-image"></p>
 <center><i>A few widgets from my homepage today.</i></center>
 <br />
 
