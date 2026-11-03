@@ -4,7 +4,7 @@ layout: post-with-comments
 
 # Good code review tips
 
-This is the third post in a series about code reviews. See the [previous post](/2024/10/26/who-fixes-the-bug) to read about some ideas for who is responsible for what throughout the code review process. This post is a collection of practices that I've found and followed over the years as I've performed literally thousands of code reviews for my teammates.
+This is the third post in a series about code reviews. See the [previous post]({% post_url 2024-10-26-who-fixes-the-bug %}) to read about some ideas for who is responsible for what throughout the code review process. This post is a collection of practices that I've found and followed over the years as I've performed literally thousands of code reviews for my teammates.
 
 ### Find something to say
 

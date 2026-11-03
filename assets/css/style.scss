@@ -2,8 +2,10 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
+@use "sass:meta";
+@use "minima/skins/{{ site.minima.skin | default: 'classic' }}" as skin;
+@use "minima/settings" with ($skin: meta.module-variables("skin"));
+@use "minima/initialize";
 
 .p1 {
   padding: 1em;

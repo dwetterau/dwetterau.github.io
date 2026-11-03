@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.."
+
+bundle check
+JEKYLL_ENV=production bundle exec jekyll build --trace
+bundle exec ruby script/check_site.rb _site

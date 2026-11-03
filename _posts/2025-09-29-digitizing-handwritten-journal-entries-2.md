@@ -5,7 +5,7 @@ layout: post-with-comments
 # Digitizing my handwritten journal entries (part 2)
 
 This is the second post in a series about how I'm converting my handwritten journal entries into digital text.
-You can read the [first post here](2025/05/04/digitizing-handwritten-journal-entries).
+You can read the [first post here]({% post_url 2025-05-04-digitizing-handwritten-journal-entries %}).
 
 In this update, I'll explain the process that I took to go from ~600 entries digitized to 2717.
 
