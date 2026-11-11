@@ -86,7 +86,7 @@ It seemed like the quality was already high enough to start interpreting the res
 ### Wrapping up
 
 I work at Airtable, and specifically have been working on many of our [AI capabilities](https://www.airtable.com/platform/ai) lately.
-For one of my personal Airtable bases ([see post here!](/2025/05/15/custom-airtable-agent-chapter-1.html)), I'm eager to have the text content of my journal entries available so that I can start processing them with AI search and summarization tools.
+For one of my personal Airtable bases ([see post here!]({% post_url 2025-05-15-custom-ai-personal-assistant-in-airtable %})), I'm eager to have the text content of my journal entries available so that I can start processing them with AI search and summarization tools.
 
 After converting each scanned image to text with the model above, I then uploaded the image along with the text to an Airtable table with [these Python functions](https://gist.github.com/dwetterau/7ad292d593ff0f84820f237681372232).
 The end result of this is I now have a "Journal" table in Airtable with the date, scanned image, and extracted text of each entry.

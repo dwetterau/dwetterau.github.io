@@ -4,7 +4,7 @@ layout: post-with-comments
 
 # AI Coding Summer 2026
 
-The way I wrote code completely changed around the beginning of this year, which I wrote about some [back in March](/2026/03/21/no-longer-an-intern). I noticed it first on side projects - where I found that fully vibe-coded apps were just as good as my old side-project attempts, as long as I [code reviewed](/2025/01/28/good-code-review-tips) the parts such as the interfaces and data models. Anything outside of those it stopped making sense to sweat over, since a full re-implementation is so easily attainable. 
+The way I wrote code completely changed around the beginning of this year, which I wrote about some [back in March]({% post_url 2026-03-21-no-longer-an-intern %}). I noticed it first on side projects - where I found that fully vibe-coded apps were just as good as my old side-project attempts, as long as I [code reviewed]({% post_url 2025-01-28-good-code-review-tips %}) the parts such as the interfaces and data models. Anything outside of those it stopped making sense to sweat over, since a full re-implementation is so easily attainable.
 
 ## Vibe-coding professionally
 

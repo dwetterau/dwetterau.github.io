@@ -1,0 +1,66 @@
+@use "sass:map";
+
+$skin: () !default;
+
+// Define defaults for each variable.
+
+$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif !default;
+$code-font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$table-text-align: left !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+$on-medium:        $on-palm !default;
+$on-large:         $on-laptop !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+// Notice the following mixin uses max-width, in a deprecated, desktop-first
+// approach, whereas media queries used elsewhere now use min-width.
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: #{$ratio}rem;
+}
+
+// Colors supplied by the selected skin.
+$brand-color: map.get($skin, "brand-color") !default;
+$brand-color-light: map.get($skin, "brand-color-light") !default;
+$brand-color-dimmed: map.get($skin, "brand-color-dimmed") !default;
+$brand-color-dark: map.get($skin, "brand-color-dark") !default;
+$site-title-color: map.get($skin, "site-title-color") !default;
+$heading-color: map.get($skin, "heading-color") !default;
+$text-color: map.get($skin, "text-color") !default;
+$background-color: map.get($skin, "background-color") !default;
+$code-background-color: map.get($skin, "code-background-color") !default;
+$link-base-color: map.get($skin, "link-base-color") !default;
+$link-visited-color: map.get($skin, "link-visited-color") !default;
+$link-hover-color: map.get($skin, "link-hover-color") !default;
+$border-color-01: map.get($skin, "border-color-01") !default;
+$border-color-02: map.get($skin, "border-color-02") !default;
+$border-color-03: map.get($skin, "border-color-03") !default;
+$table-text-color: map.get($skin, "table-text-color") !default;
+$table-zebra-color: map.get($skin, "table-zebra-color") !default;
+$table-header-bg-color: map.get($skin, "table-header-bg-color") !default;
+$table-header-border: map.get($skin, "table-header-border") !default;
+$table-border-color: map.get($skin, "table-border-color") !default;

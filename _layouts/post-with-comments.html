@@ -4,6 +4,7 @@ layout: post
 <div>
   {{ content }}
 
+{% if jekyll.environment == 'production' and page.comments != false %}
 <script src="https://utteranc.es/client.js"
         repo="dwetterau/dwetterau.github.io"
         issue-term="pathname"
@@ -12,4 +13,5 @@ layout: post
         crossorigin="anonymous"
         async>
 </script>
+{% endif %}
 </div>

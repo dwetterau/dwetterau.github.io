@@ -6,7 +6,7 @@ layout: base
   <h1>Welcome!</h1>
   <div class="home-header-container">
     <div class="profile-container" style="width: 128px">
-      <img id="profile-pic" src="/images/profile_2024.jpg" />
+      <img id="profile-pic" src="{{ '/images/profile_2024.jpg' | relative_url }}" alt="David Wetterau" />
     </div>
     <div class="home-content">{{ content }}</div>
   </div>

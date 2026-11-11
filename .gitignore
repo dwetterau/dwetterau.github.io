@@ -1,4 +1,9 @@
 _site/
+.bundle/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+vendor/
 node_modules/
 *.swp
 .idea

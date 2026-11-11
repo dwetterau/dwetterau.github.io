@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
+cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
 
-bundle exec jekyll serve
-# python -m SimpleHTTPServer 8000
+# Preview the site. Run ./script/check for production validation.
+exec bundle exec jekyll serve --livereload --trace "$@"
