@@ -4,7 +4,7 @@ layout: post-with-comments
 
 # A beautiful fall in New York City
 
-I had the priviledge of taking a break between my job at Cursor and my next role during the fall.
+I had the privilege of taking a break between my job at Cursor and my next role during the fall.
 Historically I have always gone straight from job to job, mostly to keep health insurance coverage (thanks America), and because I generally fear the unknown of not knowing what to do with my time without going to work every day.
 But this break taught me that even without work the world still goes on, and I can easily find things to do.
 
