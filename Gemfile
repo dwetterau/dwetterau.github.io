@@ -11,7 +11,7 @@ group :jekyll_plugins do
   gem "jekyll-relative-links", "~> 0.9"
   gem "jekyll-seo-tag", "~> 2.9"
   gem "jekyll-sitemap", "~> 1.4"
-  gem "jekyll-titles-from-headings", "~> 0.5"
+  gem "jekyll-titles-from-headings", "~> 0.6"
 end
 
 group :development do
