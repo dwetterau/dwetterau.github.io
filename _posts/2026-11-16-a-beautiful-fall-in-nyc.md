@@ -13,7 +13,7 @@ I bought a road bike, and had fun biking around New York City in the beautiful m
 I bought a 3d printer from Prusa, which I spent several days assembling and then many more days modeling and printing things to fix minor annoyances around the apartment.
 On several occasions I day tripped out to nearby towns, just to do small hikes or walks in nature.
 
-I worked on side projects too, mostly [Tasky](/2026/10/22/tasky-and-agent-state), which absorbed many of my other efforts into one agent-friendly form-factor.
+I worked on side projects too, mostly [Tasky](/2026/10/22/tasky-and-agent-state.html), which absorbed many of my other efforts into one agent-friendly form-factor.
 I also revived an old idea of mine, where I can use a social network that isn't public to organize the relationships in my life. 
 This one was exciting to see how agents can read over my journal and populate the initial version, with dates and events in my life I enjoyed with those people.
 I also spent many tokens on a game, just for me, which I found more fun to build than to play so far.
